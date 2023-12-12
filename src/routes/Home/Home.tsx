@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import Slider from "react-slick";
+import Carousel from "../../components/Slider/Carousel";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
           The green future of e-waste disposal
         </div>
       </div>
-      <Slider />
+      <Carousel />
     </div>
   );
 };

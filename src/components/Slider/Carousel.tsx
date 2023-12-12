@@ -1,10 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import img1 from "../../assets/slide1.jpg";
-import img2 from "../../assets/slide2.jpg";
-import img3 from "../../assets/slide3.jpg";
+import img2 from "../../assets/slide2.jpeg";
+import img3 from "../../assets/slide3.jpeg";
 
 const Carousel = () => {
   const settings = {
