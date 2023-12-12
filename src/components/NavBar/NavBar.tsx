@@ -12,8 +12,11 @@ const NavBar: React.FC = () => {
         {NavRoutes.map((route, index) => (
           <NavItem key={index} path={route.path} name={route.meta.name} />
         ))}
-        <div className={styles.navitems}></div>
-        <div className={styles.login}></div>
+        <div className={styles.navitems}>
+          <div className={styles.login}>
+            <button>LOGIN</button>
+          </div>
+        </div>
       </div>
       <div>
         <Outlet />
