@@ -3,7 +3,6 @@
 .carousel::after {
   box-sizing: border-box;
 }
-
 .carousel {
   width: 100vh;
   height: 100vh;
