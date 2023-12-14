@@ -1,0 +1,108 @@
+
+.main_container{
+    padding-top: 2%;
+    padding-bottom: 7%;
+    background-color: #daeadd;
+}
+
+.title_ecoprints {
+    color: #55B76B;
+    font-size: 48px;
+    padding-top: 100px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    overflow-wrap: normal;
+    text-align: center;
+}
+
+.text_container {
+    padding-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+  }
+  
+  .text {
+    padding: 25px;
+  }
+  
+  .image {
+    padding: 75px;
+  }
+
+  .text_question_answer{
+    color: #333333;
+    font-size: 32px;
+    font-family: 'Literata';
+    font-weight: 400;
+    letter-spacing: 1.60px;
+    overflow-wrap: normal;
+  }
+
+  .title_disposal{
+    color: #55B76B;
+    font-size: 40px;
+    padding-top: 100px;
+    font-style: italic;
+    font-family: "Montserrat";
+    letter-spacing: 2px;
+    font-weight: 700;
+    overflow-wrap: normal;
+    text-align: center;
+  }
+
+  .text_container_disposal{
+    padding-top: 3%;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    justify-content: space-between;
+    
+  }
+
+  .text_title_disposal{
+    color: #333333;
+    font-size: 36px;
+    font-family: 'Literata';
+    font-style: 'italic';
+    font-weight: 700;
+    letter-spacing: 1.80;
+    text-align: center;
+  }
+
+  .text_disposal{
+    color: #333333;
+    font-size: 34px;
+    font-family: 'Literata';
+    font-weight: 400;
+  }
+  ul{
+    list-style-type: none;
+    line-height: 2;
+  }
+
+  .text_container{
+    justify-content: space-between;
+  }
+  
+  .text_explore_more{
+    padding-left: 4%;
+    padding-top: 4%;
+    color: #333333;
+    font-size: 34px;
+    font-family: 'Literata';
+    font-style: 'italic';
+    font-weight: 400;
+    letter-spacing: 1.80;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  a{
+    text-decoration: none;
+    color: #333333;
+  }
