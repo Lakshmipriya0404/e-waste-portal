@@ -3,8 +3,6 @@ import React, { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import { NavRoutes } from "./components/NavBar/NavRoutes";
-import About from "./routes/About/About";
-
 
 const router = createBrowserRouter([
   {
