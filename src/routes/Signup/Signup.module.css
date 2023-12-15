@@ -1,42 +1,55 @@
-/* Signup.module.css */
-.signupwrap {
+.cardswrap {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc; /* Border for the main card */
+  justify-content: center;
+  height: 60vh;
+  margin: 0;
+}
+.signupwrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   padding: 20px;
-  width: 300px; /* Adjust the width as needed */
-  margin: auto;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  margin: 20px; /* Add margin as needed */
 }
 
 .signupheader {
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
-  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
-.cardContainer {
-  flex: 1;
+.cardcontainer {
   display: flex;
-  flex-direction: column;
-  flex-direction: row; /* Display cards side by side */
-  justify-content: space-between; /* Add space between the cards */
+  flex-direction: row; /* Set to row for side-by-side placement */
+  justify-content: space-between;
   width: 100%;
 }
 
 .cardproducer,
 .cardconsumer {
-  flex: 1; /* Distribute available space equally between the cards */
-  margin: 10px;
+  flex: 1;
+  border: 1px solid #ddd; /* Border for the nested cards */
   padding: 10px;
-  border: 1px solid #ddd; /* Border for internal cards */
+  border-radius: 8px; /* Optional: Add border radius to nested cards */
+  margin: 5px; /* Adjust margin as needed for spacing */
 }
 
 .cardproducer img,
 .cardconsumer img {
-  /* Add styling for the images inside the cards */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add border radius to images */
 }
 
 .text {
-  font-size: 1.2em;
-  margin-top: 10px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
 }
