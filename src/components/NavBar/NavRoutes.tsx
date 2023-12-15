@@ -3,6 +3,7 @@ import Contact from "../../routes/Contact/Contact";
 import Ecoprints from "../../routes/Ecoprints/Ecoprints";
 import Faqs from "../../routes/Faqs/Faqs";
 import Home from "../../routes/Home/Home";
+import Login from "../../routes/Login/Login";
 import Signup from "../../routes/Signup/Signup";
 
 export const NavRoutes = [
@@ -30,6 +31,11 @@ export const NavRoutes = [
     path: "contact",
     element: <Contact />,
     meta: { name: "Contact Us" },
+  },
+  {
+    path: "login",
+    element: <Login />,
+    meta: { name: "Login" },
   },
   {
     path: "signup",
