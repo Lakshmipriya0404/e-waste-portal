@@ -1,31 +1,43 @@
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import styles from "./Carousel.module.css";
 import img1 from "../../assets/slide1.jpg";
 import img2 from "../../assets/slide2.jpeg";
 import img3 from "../../assets/slide3.jpeg";
 
-const Carousel = () => {
+interface CarouselProps {}
+
+const Carousel: React.FC<CarouselProps> = () => {
+  // const [activeIndex, setActiveIndex] = useState(0);
+
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    //autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    // afterChange: (index: number) => setActiveIndex(index),
   };
 
   return (
-    <div>
+    <div className={styles.carousel}>
       <Slider {...settings}>
-        <div>
-          <img src={img1} alt="Image 1" />
+        <div className={styles.slide}>
+          <img src={img1} alt="Nature Image #1" />
         </div>
-        <div>
-          <img src={img2} alt="Image 2" />
+        <div className={styles.slide}>
+          <img src={img2} alt="Nature Image #2" />
         </div>
-        <div>
-          <img src={img3} alt="Image 3" />
+        <div className={styles.slide}>
+          <img src={img3} alt="Nature Image #3" />
         </div>
       </Slider>
+      {/* <p>Current Slide: {activeIndex + 1}</p> */}
     </div>
   );
 };

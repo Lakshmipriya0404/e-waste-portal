@@ -1,0 +1,55 @@
+.cardswrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  margin: 0;
+}
+.signupwrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  margin: 20px; /* Add margin as needed */
+}
+
+.signupheader {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: row; /* Set to row for side-by-side placement */
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cardproducer,
+.cardconsumer {
+  flex: 1;
+  border: 1px solid #ddd; /* Border for the nested cards */
+  padding: 10px;
+  border-radius: 8px; /* Optional: Add border radius to nested cards */
+  margin: 5px; /* Adjust margin as needed for spacing */
+}
+
+.cardproducer img,
+.cardconsumer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add border radius to images */
+}
+
+.text {
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
