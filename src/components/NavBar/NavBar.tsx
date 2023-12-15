@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
     <div className={styles.navwrap}>
       <div className={styles.nav}>
         <div className={styles.logo}></div>
-        {NavRoutes.map((route, index) => (
+        {NavRoutes.slice(0, 5).map((route, index) => (
           <NavItem key={index} path={route.path} name={route.meta.name} />
         ))}
         <div className={styles.navitems}>
