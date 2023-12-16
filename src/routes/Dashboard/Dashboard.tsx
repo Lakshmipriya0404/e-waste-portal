@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Dashboard.module.css";
 import Sidebar from "../../sections/Sidebar/Sidebar";
-import Profile from "../../sections/Profile/Profile";
+import Profile from "../../sections/Profile/ProducerProfile";
 import FacilityLocator from "../../sections/Locator/FacilityLocator";
 
 const Dashboard = () => {

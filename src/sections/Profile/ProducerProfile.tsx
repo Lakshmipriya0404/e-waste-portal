@@ -1,5 +1,6 @@
+//producer profile
 import React from "react";
-import styles from "./Profile.module.css";
+import styles from "./ProducerProfile.module.css";
 
 const Profile = () => {
   const subHeaders = ["NAME", "CATEGORY", "PHONE NO", "EMAIL ID", "ADDRESS"];
