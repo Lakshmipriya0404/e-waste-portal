@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css?family=Literata:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
+
+.home{
+    background-color: #daeadd;
+    height: 100%;
+    padding: 0% 10%;
+  }
+  
+  .logincontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    margin: auto;
+    width: 60%;
+    
+  }
+  
+  .loginwrap {
+    text-align: center;
+    width: 100%;
+    margin-top: 20%;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5%;
+  }
+  
+  .loginheader {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 3%;
+    color: black;
+    font-family: "Literata";
+    font-style: italic;
+  }
+  
+  .formwrap {
+    margin-top: 20px;
+  }
+  
+  .radiobtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 2%;
+  }
+
+  .radiobtn label{
+    margin-bottom: 20px;
+    margin-right: 50px;
+  }
+
+  .radiolabel{
+    /* padding-top: 1%; */
+    font-size: 26px;
+    margin: 0;
+    color: black;
+  }
+  
+  .radiolabel_doorstep label{
+    width: 500px;
+  }
+
+  .input_fields{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 6%;
+    padding-bottom: 4%;
+    width: 80%;
+  }
+
+  .radio_input_fields{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    /* width: 80%; */
+  }
+  
+  .input_fields label{
+    width: 250px;
+    font-size: 26px;
+    padding-right: 7%;
+    color: black;
+    font-family: "Literata";
+    font-style: italic;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 26px;
+  }
+  
+  .input_text{
+    width: 350px;
+    height: 50px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #55B76B;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+    border-top: #55B76B;
+    border-left: #55B76B;
+    border-right: #55B76B;
+    font-size: 20px;
+  }
+
+  .ophours{
+    width: 500px;
+  }
+  
+  .signup_button{
+    padding: 4% 0%;
+  }
+  

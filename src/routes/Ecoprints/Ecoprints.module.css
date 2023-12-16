@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css?family=Literata:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
+
 .main_container{
     padding-top: 2%;
     padding-bottom: 7%;
@@ -32,12 +35,22 @@
     padding: 75px;
   }
 
-  .text_question_answer{
+  .text_question{
     color: #333333;
     font-size: 32px;
     font-family: 'Literata';
     font-weight: 400;
     letter-spacing: 1.60px;
+    overflow-wrap: normal;
+  }
+
+  .text_answer{
+    color: #333333;
+    font-size: 26px;
+    font-family: 'Literata';
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 50px;
     overflow-wrap: normal;
   }
 

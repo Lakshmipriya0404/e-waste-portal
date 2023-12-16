@@ -1,45 +1,87 @@
-.main_container{
-    padding-top: 2%;
-    padding-bottom: 7%;
-    background-image: url("../../assets/FAQPage-Background.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-}
+
+@import url('https://fonts.googleapis.com/css?family=Literata:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
+
+.main{
+    padding: 8% 10%;
+    background-image: url("../../assets/FAQPage-Background.png"); 
+    background-repeat: no-repeat;    
+    background-size: cover;
+  }
 
 .title_ecoprints {
     color: #55B76B;
     font-size: 48px;
-    padding-top: 100px;
+    padding-bottom: 50px;
     font-family: "Montserrat";
     font-weight: 700;
     overflow-wrap: normal;
     text-align: center;
 }
 
-.collapsible {
-    background-color: #eee;
-    color: #444;
+.ques_block{
+    padding: 1%;
+}
+
+.details_tab {
+    padding: 4px;
+    width: auto;
+    height: 5%;
+    background-color: white;
     cursor: pointer;
-    padding: 10px;
-    width: 70%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 20px;
-    text-align: center;
+
   }
 
-  .collapsible_img{
-    padding-top: 18px;
+  details > summary {
+    list-style: none;
   }
-
-  .active, .collapsible:hover {
-    background-color: #ccc;
-  }
-  
-  .content {
-    padding: 0 1px;
+  details > summary::-webkit-details-marker {
     display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
+  }
+
+
+  .ques_tab{
+    font-style: "Literata";
+    letter-spacing: 1.6px;
+    padding: 0.5% 2%;
+    line-height: 66.33px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 27px;
+  }
+
+  .answer_tab{
+    font-style: "Literata";
+    letter-spacing: 1.6px;
+    padding: 0.5% 2%;
+    line-height: 50px;
+    font-weight: 200;
+    font-size: 25px;
+  }
+
+  .text_container {
+    width: 45%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    padding: 5% 0%;
+  }
+
+  .know_more {
+    padding-top: 17px;
+    font-size: 32px;
+    font-style: italic;
+  }
+
+  .knowmore_button {
+    font-family: "Literata", sans-serif;
+    font-size: 26px;
+    background-color: #55B76B;
+    border: none;
+    padding: 20px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 9px;
+    width: 200px;
   }

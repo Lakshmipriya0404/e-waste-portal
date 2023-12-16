@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css?family=Literata:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
+
+.home{
+    background-color: #050539;
+    height: 100%;
+    padding: 0% 10%;
+  }
+  
+  .logincontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    margin: auto;
+    width: 60%;
+    
+  }
+  
+  .loginwrap {
+    text-align: center;
+    width: 100%;
+    margin-top: 20%;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    padding: 5%;
+  }
+  
+  .loginheader {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 3%;
+    color: whitesmoke;
+    font-family: "Literata";
+    font-style: italic;
+  }
+  
+  .formwrap {
+    margin-top: 20px;
+  }
+  
+  .radiobtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding-bottom: 2%;
+  }
+
+  .radiolabel{
+    /* padding-top: 1%; */
+    font-size: 26px;
+    padding-right: 14%;
+    padding-bottom: 7%;
+    color: whitesmoke;
+  }
+  
+  
+  .input_fields{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 6%;
+    padding-bottom: 4%;
+    width: 80%;
+  }
+  
+  .input_fields label{
+    width: 250px;
+    padding-top: 3%;
+    font-size: 26px;
+    padding-right: 7%;
+    color: whitesmoke;
+    font-family: "Literata";
+    font-style: italic;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 19px;
+  }
+  
+  .input_text{
+    width: 350px;
+    height: 50px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  a {
+    padding-top: 5%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  .signup_button{
+    padding: 4% 0%;
+  }
+  

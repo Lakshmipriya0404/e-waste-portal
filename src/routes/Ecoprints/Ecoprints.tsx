@@ -16,12 +16,11 @@ const Ecoprints = () => {
 
         <div className={styles.text_container}>
           <div className={styles.text}>
-            <p className={styles.text_question_answer}>What is E-Waste?</p>
+            <p className={styles.text_question}>What is E-Waste?</p>
             <br />
             <br />
-            <p className={styles.text_question_answer}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className={styles.text_answer}>
+            E-waste, or electronic waste, refers to discarded electrical or electronic devices that have reached the end of their life cycle or are no longer in use. This category of waste encompasses a diverse range of items, including but not limited to computers, laptops, smartphones, tablets, printers, refrigerators, washing machines, and other household and industrial electronic equipment.
             </p>
           </div>
           <div className={styles.image}>
@@ -34,12 +33,11 @@ const Ecoprints = () => {
             <img src={img1} />
           </div>
           <div className={styles.text}>
-            <p className={styles.text_question_answer}>What is E-Waste?</p>
+            <p className={styles.text_question}>Why should we dispose safely?</p>
             <br />
             <br />
-            <p className={styles.text_question_answer}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className={styles.text_answer}>
+            With the global surge in electronic device consumption, effective disposal is crucial. Proper management involves recycling and responsible disposal to minimize environmental impact and health risks. Recycling e-waste not only addresses environmental concerns but also allows for the recovery of valuable materials, contributing to sustainable resource management and the reduction of electronic waste's adverse effects on our planet.
             </p>
           </div>
         </div>
@@ -56,21 +54,23 @@ const Ecoprints = () => {
             <ul className={styles.text_disposal}>
               <li>
                 {" "}
-                <img src={tick} /> &nbsp; &nbsp; Lorem ipsum dolor sit amet
+                <img src={tick} /> &nbsp; &nbsp; Use certified e-waste recycling facilities that adhere to environmental standards.
               </li>
               <li>
                 {" "}
-                <img src={tick} /> &nbsp; &nbsp; consectetur adipiscing elit
+                <img src={tick} /> &nbsp; &nbsp; Erase personal data from devices before disposal to protect your privacy.
               </li>
               <li>
                 {" "}
-                <img src={tick} /> &nbsp; &nbsp; sed do eiusmod tempor
-                incididunt
+                <img src={tick} /> &nbsp; &nbsp; Remove and properly dispose of batteries before recycling electronic devices.
               </li>
               <li>
                 {" "}
-                <img src={tick} /> &nbsp; &nbsp; ut labore et dolore magna
-                aliqua
+                <img src={tick} /> &nbsp; &nbsp; Familiarize yourself with local regulations and guidelines for e-waste disposal.
+              </li>
+              <li>
+                {" "}
+                <img src={tick} /> &nbsp; &nbsp; Consider donating or selling still-functional electronics to extend their lifespan.
               </li>
             </ul>
           </div>
@@ -80,10 +80,13 @@ const Ecoprints = () => {
             <br />
             <br />
             <ul className={styles.text_disposal}>
-              <li> ❌ &nbsp; &nbsp; Lorem ipsum dolor sit amet</li>
-              <li> ❌ &nbsp; &nbsp; consectetur adipiscing elit</li>
-              <li> ❌ &nbsp; &nbsp; sed do eiusmod tempor incididunt</li>
-              <li> ❌ &nbsp; &nbsp; ut labore et dolore magna aliqua</li>
+              <li> ❌ &nbsp; &nbsp; Dispose of electronic devices in regular trash bins. E-waste requires special handling.</li>
+              <li> ❌ &nbsp; &nbsp; Engage in illegal dumping of e-waste, as it poses environmental and health risks.</li>
+              <li> ❌ &nbsp; &nbsp; Contribute to landfill waste; choose recycling methods to recover valuable materials.</li>
+              <li> ❌ &nbsp; &nbsp; Burn electronic devices, as it releases toxic fumes and pollutants.
+              </li>
+              <li> ❌ &nbsp; &nbsp; Export of e-waste without proper verification.
+              </li>
             </ul>
           </div>
         </div>

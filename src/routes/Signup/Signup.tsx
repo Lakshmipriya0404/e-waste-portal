@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Signup.module.css";
+import prod from "../../assets/SignUpPage-Producer_Logo.png";
 
 const Signup = () => {
   return (
@@ -10,14 +11,14 @@ const Signup = () => {
           TELL US WHO YOU ARE
         </div>
         <div className={styles.cardcontainer}>
-          <div className={styles.cardproducer}>
-            <img src="" alt="" />
+          <a className={styles.cardproducer} href="">
+            <img src={prod} />
             <div className={styles.text}>PRODUCER</div>
-          </div>
-          <div className={styles.cardconsumer}>
+          </a>
+          <a className={styles.cardconsumer} href="">
             <img src="" alt="" />
             <div className={styles.text}>CONSUMER</div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
