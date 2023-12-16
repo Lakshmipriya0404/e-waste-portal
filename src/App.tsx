@@ -10,8 +10,6 @@ const router = createBrowserRouter([
     element: <NavBar />,
     children: NavRoutes,
   },
-
- 
 ]);
 
 function App() {

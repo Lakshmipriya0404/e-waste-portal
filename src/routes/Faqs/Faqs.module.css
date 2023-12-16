@@ -75,7 +75,7 @@
 
   .knowmore_button {
     font-family: "Literata", sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     background-color: #55B76B;
     border: none;
     padding: 20px;
@@ -83,4 +83,5 @@
     text-align: center;
     cursor: pointer;
     border-radius: 9px;
+    width: 200px;
   }

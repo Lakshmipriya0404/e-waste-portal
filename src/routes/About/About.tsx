@@ -11,13 +11,12 @@ const About = () => {
       </div>
 
       <div>
-        <p className={styles.title_ewsachh}>E Swachh</p>
+        <p className={styles.title_ewsachh}>E - Kartavya</p>
       </div>
 
       <div className={styles.text_container}>
         <p className={styles.content_ewsachh}>
-          "We are lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        Welcome to our platform dedicated to responsible e-waste disposal. Committed to sustainability, we connect you with certified recyclers, promoting a greener, cleaner future. Join us in recycling responsibly!
         </p>
       </div>
 
@@ -32,8 +31,7 @@ const About = () => {
 
       <div className={styles.text_container}>
         <p className={styles.content_ewsachh}>
-          "We are lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          "Our mission is to revolutionize e-waste management, fostering a sustainable future. We aim to connect individuals and businesses with responsible recycling options, minimizing environmental impact and promoting circular economies globally."
         </p>
       </div>
 
@@ -48,8 +46,7 @@ const About = () => {
 
       <div className={styles.text_container}>
         <p className={styles.content_ewsachh}>
-          "We are lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          "Our vision is a world where electronic waste is efficiently managed, contributing to a circular economy. We envision widespread awareness, responsible disposal practices, and sustainable resource recovery for a cleaner planet."
         </p>
       </div>
     </div>
