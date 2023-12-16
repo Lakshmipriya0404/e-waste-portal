@@ -29,14 +29,4 @@
   color: #5b9739;
 }
 
-.navitems button {
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #5b9739;
-  background-color: transparent;
-  border: none;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-}
+
