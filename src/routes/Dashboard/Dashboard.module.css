@@ -1,0 +1,10 @@
+/* Dashboard.module.css */
+
+.mainwrap {
+  display: flex;
+}
+
+.mainboard {
+  flex: 1;
+  /* Add your styles for the mainboard container */
+}

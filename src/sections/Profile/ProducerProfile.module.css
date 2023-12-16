@@ -1,0 +1,58 @@
+/* Profile.module.css */
+
+.profilewrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.creditcard {
+  width: 200px;
+  height: 120px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.subheader {
+  width: 150px;
+  font-weight: bold;
+}
+
+.subvalue {
+  flex: 1;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+}
+
+.button button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: #0056b3;
+}

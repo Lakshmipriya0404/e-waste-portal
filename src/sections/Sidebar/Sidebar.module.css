@@ -1,0 +1,31 @@
+.sideboard {
+  /* Add your styles for the sideboard container */
+}
+
+.welcome {
+  /* Add your styles for the welcome message */
+}
+
+.sidebtn {
+  /* Add your styles for the dashboard button */
+}
+
+.sidebarlist {
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  background-color: #f0f0f0; /* Add your preferred hover background color */
+}
+
+.text {
+  margin-left: 10px;
+}

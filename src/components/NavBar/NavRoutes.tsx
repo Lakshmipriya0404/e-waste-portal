@@ -6,6 +6,7 @@ import Faqs from "../../routes/Faqs/Faqs";
 import Home from "../../routes/Home/Home";
 import Login from "../../routes/Login/Login";
 import Signup from "../../routes/Signup/Signup";
+import Dashboard from "../../routes/Dashboard/Dashboard";
 
 export const NavRoutes = [
   {
@@ -42,5 +43,10 @@ export const NavRoutes = [
     path: "signup",
     element: <Signup />,
     meta: { name: "Sign Up" },
+  },
+  {
+    path: "dashboard",
+    element: <Dashboard />,
+    meta: { name: "Dashboard" },
   },
 ];
