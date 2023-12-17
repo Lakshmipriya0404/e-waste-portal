@@ -15,10 +15,10 @@
 .loginwrap {
   text-align: center;
   width: 500px;
-  margin-top: 40%;
+  margin-top: 70%;
   border: 1px solid black;
   border-radius: 8px;
-  padding: 20%;
+  padding: 2%;
 }
 
 .loginheader {
@@ -27,7 +27,7 @@
 }
 
 .formwrap {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .radiobtn {
   display: flex;
@@ -42,7 +42,7 @@ label {
 .input_fields {
   display: flex;
   justify-content: space-between;
-  padding: 6%;
+  padding: 4%;
 }
 
 .input_fields label {
