@@ -1,0 +1,54 @@
+/* Profile.module.css */
+
+.profilewrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    padding: 20px;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 27%;
+  }
+  
+  .row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .requests{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 0%; 
+  }
+
+  .requests td, .requests tr{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .requests tr:nth-child(even){
+    background-color: #D4F8D3;
+  }
+
+  .requests th {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    background-color: #D4F8D3;
+    border: 1px solid black;
+  }
+  
