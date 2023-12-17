@@ -5,6 +5,7 @@
 }
 
 .mainboard {
+  margin-top: 10%;
   flex: 1;
   /* Add your styles for the mainboard container */
 }
