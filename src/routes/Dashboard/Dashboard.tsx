@@ -12,9 +12,9 @@ const Dashboard = () => {
       <Sidebar />
       <div className={styles.mainboard}>
         <Profile />
-        {/* <FacilityLocator />
-        <RecentRequest/>
-        <Disposal_History/> */}
+        <FacilityLocator />
+        {/* <RecentRequest />
+        <Disposal_History /> */}
       </div>
     </div>
   );
