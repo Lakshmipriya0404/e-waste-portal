@@ -14,8 +14,8 @@ const Contactus = () => {
       </div>
       <div className={styles.contact}>
         <div className={styles.header}>
-          <div className="text">Contact us</div>
-          <div className="bulb">
+          <div className={styles.headertext}>Contact us</div>
+          <div className={styles.bulb}>
             <img src={contactbulb} alt="" />
           </div>
         </div>
