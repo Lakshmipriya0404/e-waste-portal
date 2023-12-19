@@ -8,7 +8,7 @@ interface FacilityData {
   address: string;
   email: string;
   phone: string;
-  distance: string;
+  distance: number;
 }
 
 const FacilityLocator: React.FC = () => {
@@ -39,7 +39,7 @@ const FacilityLocator: React.FC = () => {
     )
       .then((response) => {
         console.log(response.data);
-        setProcessedData(response.data as FacilityData[]);
+        setProcessedData(response.data as FacilityData);
       })
       .catch((error) => {
         setError("Error processing location on the server.");
@@ -117,7 +117,7 @@ const FacilityLocator: React.FC = () => {
                       <td>{item.address}</td>
                       <td>{item.email}</td>
                       <td>{item.phone}</td>
-                      <td>{item.distance}</td>
+                      <td>{item.distance.toFixed(2)} Kms</td>
                     </tr>
                   ))}
                 </tbody>

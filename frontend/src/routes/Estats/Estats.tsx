@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
@@ -144,8 +145,7 @@ const Estats: React.FC = () => {
   const [barChartOptions, setBarChartOptions] = useState({});
 
   return (
-    <div>
-      <h2>Highcharts Chart</h2>
+    <div style={{ paddingTop: "70px", height: "100vh" }}>
       <div
         style={{
           display: "flex",
