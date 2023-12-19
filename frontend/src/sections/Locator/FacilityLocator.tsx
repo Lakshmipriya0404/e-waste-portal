@@ -105,6 +105,7 @@ const FacilityLocator: React.FC = () => {
                     <th>Address</th>
                     <th>Email</th>
                     <th>Phone Number</th>
+                    <th>Distance</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -116,6 +117,7 @@ const FacilityLocator: React.FC = () => {
                       <td>{item.address}</td>
                       <td>{item.email}</td>
                       <td>{item.phone}</td>
+                      <td>{item.distance}</td>
                     </tr>
                   ))}
                 </tbody>

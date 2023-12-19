@@ -8,6 +8,7 @@ import Login from "../../routes/Login/Login";
 import Signup from "../../routes/Signup/Signup";
 import ProducerDashboard from "../../routes/ProducerDashboard/ProducerDashboard";
 import ConsumerDashboard from "../../routes/ConsumerDashboard/ConsumerDashboard";
+import Estats from "../../routes/Estats/Estats";
 
 export const NavRoutes = [
   {
@@ -34,6 +35,11 @@ export const NavRoutes = [
     path: "contact",
     element: <Contact />,
     meta: { name: "Contact Us" },
+  },
+  {
+    path: "estats",
+    element: <Estats />,
+    meta: { name: "E-Stats" },
   },
   {
     path: "login",
