@@ -1,4 +1,7 @@
+import ssl
+import certifi
 from fastapi import FastAPI
+import geopy
 from sqlalchemy.orm import Session
 import passlib.hash as hash
 import database as database
@@ -9,7 +12,8 @@ import math
 from geopy.geocoders import Nominatim
 from geopy.distance import geodesic
 from passlib.context import CryptContext
-
+ctx = ssl.create_default_context(cafile=certifi.where())
+geopy.geocoders.options.default_ssl_context = ctx
 
 def create_database():
     return database.Base.metadata.create_all(bind=database.engine)
