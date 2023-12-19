@@ -1,17 +1,37 @@
 .sideboard {
-  /* Add your styles for the sideboard container */
+  background-color: #daeadd;
+  width: 17%;
+}
+
+.profileimg{
+  margin-top: 100px;
+  margin-left: 110px;
+  width: 50px;
+  height: 50px;
 }
 
 .welcome {
-  /* Add your styles for the welcome message */
+  margin-left: 12%;
+  margin-top: 7%;
+  font-size: 30px;
 }
 
 .sidebtn {
-  /* Add your styles for the dashboard button */
+  margin-left: 15%;
+  margin-top: 15% ;
+  margin-bottom: 6% ;
+  width: 70%;
+  background-color: #46ad5c;
+  border: #1f7331;
+  padding: 15px;
 }
 
 .sidebarlist {
   margin-top: 20px;
+}
+
+.listgroup{
+  margin-left: 15%;
 }
 
 .item {
@@ -20,6 +40,7 @@
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 20px;
 }
 
 .item:hover {
