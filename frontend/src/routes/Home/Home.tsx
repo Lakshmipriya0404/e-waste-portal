@@ -9,9 +9,9 @@ const Home = () => {
         <div className={styles.container1}>
           <div className={styles.first}>
             <div className={styles.firsttext}>
-              <div className={styles.title}>E-Swachh</div>
+              <div className={styles.title}>E-KARTAVYA</div><br/>
               <div className={styles.subtitle}>
-                The green future of e-waste disposal
+                The Green  Future of E-Waste Disposal
               </div>
             </div>
           </div>

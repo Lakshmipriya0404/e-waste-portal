@@ -6,16 +6,18 @@ import RequestQueue from "../../sections/RequestQueue/RequestQueue";
 import OrderHistory from "../../sections/OrderHistory/OrderHistory";
 import OrderDetails from "../../sections/OrderDetails/OrderDetails";
 import RequestDetails from "../../sections/RequestDetails/RequestDetails";
+import AddProductModal from "../../components/AddProductModal/AddProductModal";
 
 const ConsumerDashboard = () => {
   return (
     <div className={styles.mainwrap}>
       <ConsumerSidebar />
       <div className={styles.mainboard}>
-        <ConsumerProfile />
+        {/* <ConsumerProfile />
         <RequestQueue />
         <OrderDetails/>
-        <RequestDetails/>
+        <RequestDetails/> */}
+        <AddProductModal/>
       </div>
     </div>
   );

@@ -27,3 +27,9 @@
   text-decoration: none;
   color: rgba(103, 148, 13);
 }
+
+.pageLogo{
+  height: 50px;
+  width: 150px;
+  align-items: start;
+}

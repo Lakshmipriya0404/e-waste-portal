@@ -5,7 +5,7 @@ import { NavRoutes } from "./NavRoutes";
 import NavItem from "./NavItem";
 import ProgressBar from "./ProgressBar";
 import calculateScrollPercent from "../../utils/scrollPercent";
-import mainLogo from "../../assets/mainlogo.png";
+import logo from "../../assets/E_-_KARTAVYA__1_-removebg-preview.png";
 
 const NavBar: React.FC = () => {
   const calculateNavbarStyle = (scrollPercentage: number) => {
@@ -21,7 +21,9 @@ const NavBar: React.FC = () => {
     <div className={styles.navwrap}>
       <ProgressBar scrollPercent={scrollPercentage} />
       <div className={styles.nav}>
-        <div className={styles.logo}></div>
+        <div className={styles.image}>
+          <img className={styles.pageLogo} src={logo} />
+        </div>
         {NavRoutes.slice(0, 6).map((route, index) => (
           <NavItem key={index} path={route.path} name={route.meta.name} />
         ))}
