@@ -6,17 +6,19 @@ import FacilityLocator from "../../sections/Locator/FacilityLocator";
 import RecentRequest from "../../sections/RecentRequest/RecentRequest";
 import Disposal_History from "../../sections/Disposal_History/Disposal_History";
 import RequestQueue from "../../sections/RequestQueue/RequestQueue";
+import AboutFacilitator from "../../sections/AboutFacilitator/AboutFacilitator";
 
 const Dashboard = () => {
   return (
     <div className={styles.mainwrap}>
       <Sidebar />
       <div className={styles.mainboard}>
-        <Profile />
+        {/* <Profile />
         <FacilityLocator />
         <RecentRequest />
         <Disposal_History />
-        <RequestQueue />
+        <RequestQueue /> */}
+        <AboutFacilitator/>
       </div>
     </div>
   );

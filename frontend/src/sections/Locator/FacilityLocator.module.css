@@ -97,13 +97,13 @@
 }
 
 .requests tr:nth-child(even) {
-  background-color: #E1F5FE ;
+  background-color: #D4F8D3 ;
 }
 
 .requests th {
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: center;
-  background-color: #E1F5FE ;
+  background-color: #D4F8D3 ;
   border: 1px solid black;
 }

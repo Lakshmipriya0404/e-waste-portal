@@ -1,0 +1,84 @@
+/* Profile.module.css */
+
+.aboutfwrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+  }
+
+  .ratingImage{
+    width: 500px;
+    margin-top: 10%;
+    margin-left: 2%;
+    /* margin: 2%; */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 700px; /* Adjust the margin as needed */
+  }
+  
+  .header a {
+    /* margin-right: 10px; */
+    margin-right: 5%; 
+    padding: 4.5%;
+  }
+
+  
+  
+  .row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .subheader {
+    width: 250px;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 20px;
+  }
+  
+  .subvalue {
+    /* flex: 1; */
+    margin-top: 1.5%;
+    align-items: center;
+    font-size: 20px;
+    width: 400px;
+  }
+  
+  .button {
+    /* Add a new class for the button container */
+    display: flex;
+  margin-right: 10%;
+  padding-top: 2%; /* You can adjust the margin as needed */
+  }
+  
+  button {
+    padding: 15px;
+    background-color: #46ad5c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+  }
+  
+   /* button {
+    padding: 15px;
+    background-color: #46ad5c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+    margin-top: 2%;
+  }
+  
+   button:hover {
+    background-color: rgb(21, 125, 47);
+  } */
+  
+  
