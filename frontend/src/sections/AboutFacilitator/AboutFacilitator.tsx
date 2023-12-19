@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AboutFacilitator.module.css";
+import back from "../../assets/arrow-left.png";
 
 const AboutFacilitator = () => {
   const subHeaders = ["NAME", "CATEGORY", "PHONE NO", "EMAIL ID", "ADDRESS"];
@@ -13,7 +14,9 @@ const AboutFacilitator = () => {
   return (
     <div className={styles.aboutfwrap}>
       <div className={styles.header}>
-        <a href="">back icon</a>
+        <a href="">
+          <img src={back} />
+        </a>
         <h2>About Facilitator</h2>
       </div>
       {subHeaders.map((header, index) => (
@@ -22,7 +25,9 @@ const AboutFacilitator = () => {
           <div className={styles.subvalue}>{subValues[index]}</div>
         </div>
       ))}
-      <button>SEND REQUEST</button>
+      <div className={styles.button}>
+        <button>Send Request</button>
+      </div>
     </div>
   );
 };
