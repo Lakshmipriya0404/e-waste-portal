@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./FacilityLocator.module.css";
 import { GetLocations } from "../../api";
+import { useNavigate } from "react-router-dom";
+import Popup from "../../components/Popuppage/Popup";
 
 interface FacilityData {
   cname: string;
@@ -17,6 +19,7 @@ const FacilityLocator: React.FC = () => {
   );
   const [zipCode, setZipCode] = useState<string>("0");
   const [loading, setLoading] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -85,7 +88,7 @@ const FacilityLocator: React.FC = () => {
           </button>
         </div>
         <div>
-          {loading && <p>Loading...</p>}
+          {loading && <Popup />}
           {error && <div className={styles.error}>{error}</div>}
           {processedData && (
             <div>
@@ -99,7 +102,6 @@ const FacilityLocator: React.FC = () => {
                     <th>Address</th>
                     <th>Email</th>
                     <th>Phone Number</th>
-                    <th>Distance</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -109,7 +111,6 @@ const FacilityLocator: React.FC = () => {
                       <td>{item.address}</td>
                       <td>{item.email}</td>
                       <td>{item.phone}</td>
-                      <td>{item.distance}</td>
                     </tr>
                   ))}
                 </tbody>
