@@ -64,25 +64,30 @@ const FacilityLocator: React.FC = () => {
   return (
     <>
       <div className={styles.locatorwrapper}>
-        <div className={styles.header}>
-          <h2>Nearest E-Waste Facilitator</h2>
-          <p>
+        <div>
+          <h2 className={styles.header}>Nearest E-Waste Facilitator</h2>
+          <p className={styles.subheader}>
             Find your nearest E-Waste Facilitator location with your current
             location or pincode
           </p>
         </div>
         <div className={styles.locator}>
-          <button onClick={handleSearch}>Current Location</button>
-          <div>Enter Pincode:</div>
-          <input
-            type="text"
-            placeholder="Enter Zip Code"
-            value={zipCode}
-            onChange={handleZipCodeChange}
-          />
-          <button className={styles.button} onClick={handleSearch}>
-            FIND
+          <button className={styles.currlocator} onClick={handleSearch}>
+            Current Location
           </button>
+          <div className={styles.pinlocatordiv}>
+            <p className={styles.pinlocatorlbl}>Enter Pincode:</p>
+            <input
+              className={styles.pinlocatorinp}
+              type="text"
+              placeholder="Enter Zip Code"
+              value={zipCode}
+              onChange={handleZipCodeChange}
+            />
+            <button className={styles.button} onClick={handleSearch}>
+              FIND
+            </button>
+          </div>
         </div>
         <div>
           {loading && <p>Loading...</p>}
@@ -92,7 +97,7 @@ const FacilityLocator: React.FC = () => {
               <h2 className={styles.nearbyheader}>
                 Nearby E-waste Facilitators
               </h2>
-              <table>
+              <table className={styles.requests}>
                 <thead>
                   <tr>
                     <th>Name</th>
