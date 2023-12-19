@@ -1,10 +1,11 @@
 import React from "react";
-import styles from "./Dashboard.module.css";
+import styles from "./ProducerDashboard.module.css";
 import Sidebar from "../../sections/Sidebar/Sidebar";
 import Profile from "../../sections/Profile/ProducerProfile";
 import FacilityLocator from "../../sections/Locator/FacilityLocator";
 import RecentRequest from "../../sections/RecentRequest/RecentRequest";
 import Disposal_History from "../../sections/Disposal_History/Disposal_History";
+import RequestQueue from "../../sections/RequestQueue/RequestQueue";
 
 const Dashboard = () => {
   return (
@@ -13,8 +14,9 @@ const Dashboard = () => {
       <div className={styles.mainboard}>
         <Profile />
         <FacilityLocator />
-        {/* <RecentRequest />
-        <Disposal_History /> */}
+        <RecentRequest />
+        <Disposal_History />
+        <RequestQueue />
       </div>
     </div>
   );

@@ -1,0 +1,87 @@
+/* Profile.module.css */
+
+.profilewrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 13%;
+    margin-top: 10%;
+    width: max-content;
+  }
+  
+  .row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .company{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0%;
+}
+  .company_header{
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .company_name{
+    font-size: 20px;
+    font-weight: normal;
+   
+    padding-left: 20px;
+  }
+  
+  .subheader {
+    width: 150px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .subvalue {
+    flex: 1;
+  }
+  
+  .requests{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-top: 15%;
+    margin-left: 0%; 
+  }
+
+  .requests td, .requests tr{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .requests tr:nth-child(even){
+    background-color: #E1F5FE;
+  }
+
+  .requests th {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    background-color: #E1F5FE;
+    border: 1px solid black;
+  }
+  

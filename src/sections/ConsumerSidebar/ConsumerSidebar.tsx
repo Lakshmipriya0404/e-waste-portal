@@ -1,37 +1,34 @@
 import React from "react";
 import {
   faUser,
-  faMapMarkerAlt,
   faCalendar,
   faClock,
   faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profile from "../../assets/consumer_Icon.png";
-import styles from "./Sidebar.module.css";
+import styles from "./ConsumerSidebar.module.css";
 
-const Sidebar = () => {
+const ConsumerSidebar = () => {
   const itemsListIcon = [
     faUser,
-    faMapMarkerAlt,
     faCalendar,
     faClock,
     faAngleRight,
   ];
   const itemsListName = [
     "Profile",
-    "Nearest E-waste Facilitator",
-    "Recent Requests",
-    "Disposal History",
+    "Request Queue",
+    "Order History",
     "Signed Out",
   ];
   return (
     <div className={styles.sideboard}>
-      <img src={profile} alt="" />
-      <div className={styles.welcome}>Hello User</div>
+      <img className={styles.profileimg} src={profile} alt="" />
+      <div className={styles.welcome}>Hello Consumer</div>
       <button className={styles.sidebtn}>Dashboard</button>
       <div className={styles.sidebarlist}>
-        <ul>
+        <ul className={styles.listgroup}>
           {itemsListIcon.map((icon, index) => (
             <li key={index}>
               <div className={styles.item}>
@@ -46,4 +43,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default ConsumerSidebar;

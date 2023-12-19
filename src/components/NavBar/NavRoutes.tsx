@@ -6,7 +6,8 @@ import Faqs from "../../routes/Faqs/Faqs";
 import Home from "../../routes/Home/Home";
 import Login from "../../routes/Login/Login";
 import Signup from "../../routes/Signup/Signup";
-import Dashboard from "../../routes/Dashboard/Dashboard";
+import ProducerDashboard from "../../routes/ProducerDashboard/ProducerDashboard";
+import ConsumerDashboard from "../../routes/ConsumerDashboard/ConsumerDashboard";
 
 export const NavRoutes = [
   {
@@ -45,8 +46,13 @@ export const NavRoutes = [
     meta: { name: "Sign Up" },
   },
   {
-    path: "dashboard",
-    element: <Dashboard />,
-    meta: { name: "Dashboard" },
+    path: "producer/dashboard",
+    element: <ProducerDashboard />,
+    meta: { name: "Producer Dashboard" },
+  },
+  {
+    path: "consumer/dashboard",
+    element: <ConsumerDashboard />,
+    meta: { name: "Consumer Dashboard" },
   },
 ];
