@@ -25,11 +25,15 @@
 
 .navitems a {
   text-decoration: none;
-  color: rgba(103, 148, 13);
+  color: black;
 }
 
 .pageLogo{
   height: 50px;
   width: 150px;
-  align-items: start;
+}
+
+.image {
+  display: flex; /* Added this line to enable flex properties on the image container */
+  align-items: center; /* Added this line to vertically center the logo */
 }

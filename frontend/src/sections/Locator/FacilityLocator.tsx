@@ -86,7 +86,7 @@ const FacilityLocator: React.FC = () => {
               onChange={handleZipCodeChange}
             />
             <button className={styles.button} onClick={handleSearch}>
-              FIND
+              Find
             </button>
           </div>
         </div>

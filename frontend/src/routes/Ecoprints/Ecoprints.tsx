@@ -99,8 +99,9 @@ const Ecoprints = () => {
 
             <ul>
               <li>
-               <a href=""> <img src={rules} />  &nbsp; E-Waste Management Rules</a> &emsp; &emsp; 
-                <a href=""><img src={stat} /> &nbsp; E-Waste Statistics in India &ensp;</a>
+               <a href="https://cpcb.nic.in/uploads/Projects/E-Waste/e-waste_rules_2022.pdf
+"> <img src={rules} />  &nbsp; E-Waste Management Rules</a> &emsp; &emsp; 
+                <a href="https://greene.gov.in/dashboard/"><img src={stat} /> &nbsp; E-Waste Statistics in India &ensp;</a>
               </li>
             </ul>
           
@@ -110,7 +111,7 @@ const Ecoprints = () => {
 
             <ul>
               <li>
-              <a href=""> <img src={portal} />  &nbsp; ERP Portal for E-Waste Management</a> &emsp; &emsp; 
+              <a href="https://eprewastecpcb.in/"> <img src={portal} />  &nbsp; ERP Portal for E-Waste Management</a> &emsp; &emsp; 
               </li>
             </ul>
           
