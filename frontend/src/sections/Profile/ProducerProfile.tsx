@@ -19,8 +19,8 @@ const Profile = () => {
         <div className={styles.header}>Your Profile!</div>
         {subHeaders.map((header, index) => (
           <div key={index} className={styles.row}>
-            <div className={styles.subheader}>{header}</div>
-            <div className={styles.subvalue}>{subValues[index]}</div>
+            <p className={styles.subheader}>{header}</p>
+            <p className={styles.subvalue}>{subValues[index]}</p>
           </div>
         ))}
       </div>

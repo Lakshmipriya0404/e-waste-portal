@@ -31,9 +31,9 @@ const Sidebar: React.FC<ProducerSidebarProps> = ({ onSelectItem }) => {
   ];
   return (
     <div className={styles.sideboard}>
-      <img src={profile} alt="" />
+      <img className={styles.profileimg} src={profile} alt="" />
       <div className={styles.welcome}>Hello User</div>
-      <button className={styles.sidebtn}>Dashboard</button>
+      <button className={styles.sidebtn} >Dashboard</button>
       <div className={styles.sidebarlist}>
         <ul>
           {itemsListIcon.map((icon, index) => (

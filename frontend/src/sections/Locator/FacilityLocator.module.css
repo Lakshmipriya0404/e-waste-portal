@@ -1,16 +1,16 @@
 .header {
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 5%;
-  margin-left: 35%;
+  margin-bottom: 4%;
+  margin-left: 42%;
 }
 
 .subheader {
   margin-top: 1%;
   font-size: 26px;
   margin-bottom: 3%;
-  margin-left: 17%;
+  margin-left: 27%;
 }
 
 .currlocator {
@@ -21,7 +21,7 @@
   width: 70%;
   border-radius: 5px;
   font-size: 20px;
-  margin-left: 45%;
+  margin-left: 48%;
 }
 
 .pinlocatordiv {
@@ -29,7 +29,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 .locator button {
@@ -47,6 +47,7 @@
 
 .button {
   background-color: #46ad5c;
+  width: 350px;
 }
 
 .row {
@@ -85,7 +86,7 @@
   border-collapse: collapse;
   width: 75%;
   /* margin-top: 2%; */
-  margin-left: 0%;
+  margin-left: 20%;
 }
 
 .requests td,
