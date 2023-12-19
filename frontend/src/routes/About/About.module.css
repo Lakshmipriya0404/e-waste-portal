@@ -1,8 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css?family=Literata:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
-
-.main_container{
+.main_container {
   padding-top: 2.5%;
   padding-bottom: 7%;
 }

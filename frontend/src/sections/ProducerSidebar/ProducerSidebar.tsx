@@ -8,9 +8,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profile from "../../assets/consumer_Icon.png";
-import styles from "./Sidebar.module.css";
+import styles from "./ProducerSidebar.module.css";
 
-const Sidebar = () => {
+interface ProducerSidebarProps {
+  onSelectItem: (itemName: string) => void;
+}
+
+const Sidebar: React.FC<ProducerSidebarProps> = ({ onSelectItem }) => {
   const itemsListIcon = [
     faUser,
     faMapMarkerAlt,
@@ -33,7 +37,7 @@ const Sidebar = () => {
       <div className={styles.sidebarlist}>
         <ul>
           {itemsListIcon.map((icon, index) => (
-            <li key={index}>
+            <li key={index} onClick={() => onSelectItem(itemsListName[index])}>
               <div className={styles.item}>
                 <FontAwesomeIcon icon={icon} />
                 <div className={styles.text}>{itemsListName[index]}</div>
