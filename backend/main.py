@@ -12,6 +12,13 @@ from routes import producer, authentication, consumer
 
 app = FastAPI()
 models.Base.metadata.create_all(bind=engine)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.include_router(producer.router)
 app.include_router(authentication.router)
@@ -26,13 +33,7 @@ async def root():
 
 
 # Configure CORS to allow requests from your React app's domain
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=["http://localhost:3000"],
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
+
 
 # @app.get("/location")
 # async def process_location(
