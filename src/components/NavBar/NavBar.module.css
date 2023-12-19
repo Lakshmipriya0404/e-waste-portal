@@ -10,7 +10,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .navitems {
@@ -18,14 +18,12 @@
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .navitems a {
   text-decoration: none;
-  color: #5b9739;
+  color: rgba(103, 148, 13);
 }
-
-

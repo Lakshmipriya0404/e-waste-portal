@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import styles from "./Contactus.module.css";
-import artimg from "../../assets/LeafButterfly.png";
+import artimg from "../../assets/LeafButterfly.jpg";
 import contactbulb from "../../assets/ContactUs_Bulb.jpg";
 
 const Contactus = () => {

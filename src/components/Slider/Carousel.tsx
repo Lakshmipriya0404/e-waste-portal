@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./Carousel.module.css";
-import img1 from "../../assets/slide1.jpg";
-import img2 from "../../assets/slide2.jpeg";
-import img3 from "../../assets/slide3.jpeg";
+import img1 from "../../assets/slide1.png";
+import img2 from "../../assets/slide2.png";
+import img3 from "../../assets/slide3.png";
 
 interface CarouselProps {}
 
@@ -17,7 +17,7 @@ const Carousel: React.FC<CarouselProps> = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    //autoplay: true,
+    // autoplay: true,
     speed: 1000,
     autoplaySpeed: 3000,
     cssEase: "linear",

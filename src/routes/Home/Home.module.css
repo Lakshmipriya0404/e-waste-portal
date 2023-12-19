@@ -2,10 +2,25 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  background-image: url("../../assets/indiaBG.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+.homewrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  filter: blur(5px);
+  z-index: 0;
 }
 .container1 {
   display: flex;
   margin-top: 100px;
+  z-index: 1;
 }
 .first {
   font-size: 30px;
@@ -17,10 +32,13 @@
   align-items: center;
   text-align: center;
 }
+.firsttext {
+  padding-bottom: 30%;
+}
 .subtitle {
   color: #5b9739;
 }
 .second {
   flex: 1;
-  overflow: hidden;
+  height: 100vh;
 }

@@ -1,121 +1,116 @@
-
-@import url('https://fonts.googleapis.com/css?family=Literata:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
-
-.main_container{
-    padding-top: 2%;
-    padding-bottom: 7%;
-    background-color: #daeadd;
+.main_container {
+  padding-top: 2%;
+  padding-bottom: 7%;
 }
 
 .title_ecoprints {
-    color: #55B76B;
-    font-size: 48px;
-    padding-top: 100px;
-    font-family: "Montserrat";
-    font-weight: 700;
-    overflow-wrap: normal;
-    text-align: center;
+  color: #55b76b;
+  font-size: 48px;
+  padding-top: 100px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  overflow-wrap: normal;
+  text-align: center;
 }
 
 .text_container {
-    padding-top: 7%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 60%;
-  }
-  
-  .text {
-    padding: 25px;
-  }
-  
-  .image {
-    padding: 75px;
-  }
+  padding-top: 7%;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  justify-content: center;
+  margin: auto;
+  width: 95%;
+}
 
-  .text_question{
-    color: #333333;
-    font-size: 32px;
-    font-family: 'Literata';
-    font-weight: 400;
-    letter-spacing: 1.60px;
-    overflow-wrap: normal;
-  }
+.text {
+  padding: 25px;
+}
 
-  .text_answer{
-    color: #333333;
-    font-size: 26px;
-    font-family: 'Literata';
-    font-weight: 400;
-    letter-spacing: 2px;
-    line-height: 50px;
-    overflow-wrap: normal;
-  }
+.image {
+  padding: 75px;
+}
 
-  .title_disposal{
-    color: #55B76B;
-    font-size: 40px;
-    padding-top: 100px;
-    font-style: italic;
-    font-family: "Montserrat";
-    letter-spacing: 2px;
-    font-weight: 700;
-    overflow-wrap: normal;
-    text-align: center;
-  }
+.text_question {
+  color: #333333;
+  font-size: 32px;
+  font-family: "Literata";
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  overflow-wrap: normal;
+}
 
-  .text_container_disposal{
-    padding-top: 3%;
-    padding-left: 4%;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 75%;
-    justify-content: space-between;
-    
-  }
+.text_answer {
+  color: #333333;
+  font-size: 26px;
+  font-family: "Literata";
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 50px;
+  overflow-wrap: normal;
+}
 
-  .text_title_disposal{
-    color: #333333;
-    font-size: 36px;
-    font-family: 'Literata';
-    font-style: 'italic';
-    font-weight: 700;
-    letter-spacing: 1.80;
-    text-align: center;
-  }
+.title_disposal {
+  color: #55b76b;
+  font-size: 40px;
+  padding-top: 100px;
+  font-style: italic;
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  font-weight: 700;
+  overflow-wrap: normal;
+  text-align: center;
+}
 
-  .text_disposal{
-    color: #333333;
-    font-size: 34px;
-    font-family: 'Literata';
-    font-weight: 400;
-  }
-  ul{
-    list-style-type: none;
-    line-height: 2;
-  }
+.text_container_disposal {
+  padding-top: 3%;
+  padding-left: 4%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 75%;
+  justify-content: space-between;
+}
 
-  .text_container{
-    justify-content: space-between;
-  }
-  
-  .text_explore_more{
-    padding-left: 4%;
-    padding-top: 4%;
-    color: #333333;
-    font-size: 34px;
-    font-family: 'Literata';
-    font-style: 'italic';
-    font-weight: 400;
-    letter-spacing: 1.80;
-    text-align: center;
-    justify-content: space-between;
-  }
+.text_title_disposal {
+  color: #333333;
+  font-size: 36px;
+  font-family: "Literata";
+  font-style: "italic";
+  font-weight: 700;
+  letter-spacing: 1.8;
+  text-align: center;
+}
 
-  a{
-    text-decoration: none;
-    color: #333333;
-  }
+.text_disposal {
+  color: #333333;
+  font-size: 34px;
+  font-family: "Literata";
+  font-weight: 400;
+}
+ul {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.text_container {
+  justify-content: space-between;
+}
+
+.text_explore_more {
+  padding-left: 4%;
+  padding-top: 4%;
+  color: #333333;
+  font-size: 34px;
+  font-family: "Literata";
+  font-style: "italic";
+  font-weight: 400;
+  letter-spacing: 1.8;
+  text-align: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
