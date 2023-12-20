@@ -3,7 +3,7 @@ import "./Popup.css";
 import { useNavigate } from "react-router-dom";
 //import Dashboard from '../Dashboardpage/dashboard';
 
-function Popup(device:string) {
+function Popup( x:string ) {
 
   const info = {
     "phone": [ "Many smartphones and tablets contain hazardous materials. Drop them off at designated e-waste collection points or recycle them through manufacturer programs."],
@@ -18,13 +18,13 @@ function Popup(device:string) {
     
   };
   
-  // const device = "play stations"; //
-  const len = info.device.length;
-  const content = info.device
+  const device = "play stations"; //
 
-  console.log(content)
+  const len = info[device].length
+  
+  const key = Math.floor(Math.random() * (len-1));
+  const content = info[device]
 
-  const i = Math.floor(Math.random() * (len-1));
   const navigate = useNavigate();
   const handleCloseButtonClick = () => {
     // Navigate to the Dashboard component when the "Close" button is clicked
@@ -40,7 +40,7 @@ function Popup(device:string) {
             fontFamily: "Calibri",
           }}
         >
-          {content[i]}
+          {content[key]}
         </p>
         <button onClick={handleCloseButtonClick}>Close</button>
       </div>

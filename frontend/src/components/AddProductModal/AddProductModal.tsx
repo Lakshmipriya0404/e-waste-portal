@@ -4,18 +4,8 @@ import { useNavigate } from "react-router-dom";
 import Popup from "../Popuppage/Popup";
 
 const AddProductModal = () => {
-
   const navigate = useNavigate();
 
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  const [category, setCategory] = useState('');
-
-  const handleChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
-    setCategory(event.target.value);
-
-    console.log('value is:', event.target.value);
-  };
   return (
     <div className={styles.popupcontainer}>
       <div className={styles.popupbody}>
@@ -32,6 +22,7 @@ const AddProductModal = () => {
           </div>
           <div className={styles.category}>
             <label htmlFor="category">Category</label>
+
             <select name="category" id="category">
               <option value="processor">Centralized Data Processing</option>
               <option value="PC">PC</option>
@@ -62,13 +53,14 @@ const AddProductModal = () => {
 
           <div className={styles.images}>
             <label htmlFor="imageUpload">Choose an image:</label>
-            <input type="file" id="imageUpload" name="image" accept="image/*"/>
+            <input type="file" id="imageUpload" name="image" accept="image/*" />
           </div>
         </div>
-        <button className={styles.addbutton} onClick={<Popup modelName/>}>
-          Add Product
-        </button>
-        
+        <div>
+
+        <button className={styles.addbutton}>Add Product</button>
+        <button className={styles.addbutton}>Close</button>
+        </div>
       </div>
     </div>
   );
