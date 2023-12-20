@@ -57,7 +57,12 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
             </div>
             <div className={styles.category}>
               <label htmlFor="Category">Category</label>
-              <select name="category" id="category" required>
+              <select
+                name="category"
+                id="category"
+                onChange={handleInputChange}
+                required
+              >
                 <option value="Large houseold Appliances">
                   Large houseold Appliances
                 </option>
@@ -72,7 +77,12 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
             </div>
             <div className={styles.device}>
               <label htmlFor="Device Type">Device Type</label>
-              <select name="device_type" id="device_type" required>
+              <select
+                name="device_type"
+                id="device_type"
+                onChange={handleInputChange}
+                required
+              >
                 <option value="processor">Centralized Data Processing</option>
                 <option value="PC">PC</option>
                 <option value="Laptop">Laptop</option>
@@ -92,7 +102,12 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
             </div>
             <div className={styles.condition}>
               <label htmlFor="condition">Condition</label>
-              <select name="condition" id="condition" required>
+              <select
+                name="condition"
+                id="condition"
+                onChange={handleInputChange}
+                required
+              >
                 <option value="working">Working</option>
                 <option value="notworking">Not Working</option>
                 <option value="damaged">Damaged</option>
