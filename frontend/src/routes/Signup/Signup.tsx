@@ -16,7 +16,7 @@ const Signup = () => {
             <div className={styles.text}>PRODUCER</div>
           </a>
           <a className={styles.cardconsumer} href="/consumer/signup">
-            <img src="" alt="" />
+            <img src={prod} />
             <div className={styles.text}>CONSUMER</div>
           </a>
         </div>
