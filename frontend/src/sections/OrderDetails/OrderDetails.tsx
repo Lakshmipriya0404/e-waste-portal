@@ -91,7 +91,7 @@ const OrderDetails = () => {
         </div>
       </div>
       <div className={styles.button}>
-        <button>Raise Issue</button>
+        <button>Ouery</button>
        
       </div>
     </div>

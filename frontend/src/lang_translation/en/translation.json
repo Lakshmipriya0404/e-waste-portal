@@ -1,0 +1,10 @@
+{
+    "navbar": {
+        "home":"HOME",
+        "about":"ABOUT US",
+        "ecoprint":"ECO PRINT",
+        "locator":"E-STATS",
+        "login":"LOGIN",
+        "signup":"SIGN UP"
+    }
+}

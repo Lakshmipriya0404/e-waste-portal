@@ -25,11 +25,11 @@ const Contactus = () => {
         </a>
         <a className="mail" href="">
           <FontAwesomeIcon icon={faEnvelope} />
-          <div className={styles.text}>greenprint@gmail.com</div>
+          <div className={styles.text}>e_kartavya@gmail.com</div>
         </a>
         <a className="insta" href="">
           <FontAwesomeIcon icon={faInstagram} />
-          <div className={styles.text}>The Green Print</div>
+          <div className={styles.text}>e_kartavya</div>
         </a>
       </div>
     </div>
