@@ -1,7 +1,4 @@
-import ssl
-import certifi
 from fastapi import FastAPI
-import geopy
 from sqlalchemy.orm import Session
 import passlib.hash as hash
 import database as database
@@ -12,8 +9,7 @@ import math
 from geopy.geocoders import Nominatim
 from geopy.distance import geodesic
 from passlib.context import CryptContext
-ctx = ssl.create_default_context(cafile=certifi.where())
-geopy.geocoders.options.default_ssl_context = ctx
+
 
 def create_database():
     return database.Base.metadata.create_all(bind=database.engine)
@@ -40,6 +36,7 @@ async def create_user(user: schemas.CreateProducer, db: Session):
     db.commit()
     db.refresh(user_obj)
     return user_obj
+
 
 def distance(lat1, lon1, lat2, lon2, pincode):
     if pincode!=0:
@@ -82,3 +79,38 @@ class Hash():
         return pwd_cxt.hash(password)
     def verify(hashed_password: str, plain_password: str):
         return pwd_cxt.verify(plain_password,hashed_password)
+    
+
+
+def kartavya_points(condition, gold, silver, palladium, lead, mercury, cadmium, average_life):
+    a=b=0
+    kp=0
+
+#metals of the device
+    a=((gold*8)+(silver*4)+(palladium*10)+(lead*4)+(mercury*3)+(cadmium*2))
+    kp+=a
+#condition of the device
+    if(condition=="Partially Working"):
+        kp+=6
+    elif(condition=="Not Working"):
+        kp+=4
+    elif(condition=="Damaged"):
+        kp+=2
+#average life of device
+    if(average_life<=5):
+        kp+=2
+    elif(average_life>5 and average_life<=10):
+        kp+=4
+    elif(average_life>10 and average_life<=15):
+        kp+=6
+    elif(average_life>15 and average_life<=20):
+        kp+=8
+    else:
+        kp+=10
+
+    return kp
+
+
+# # Example usage:
+# user_inputs = Kartavya_points()
+# print("Your credit score is:", user_inputs)

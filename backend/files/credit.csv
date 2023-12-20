@@ -1,0 +1,72 @@
+﻿mid,category,device,gold,silver,palladium,lead,mercury,cadmium,average_life
+1,Large houseold Appliances,Refrigerator,0.003,0.01,0.003,0.02,0.01,0.002,10
+2,Large houseold Appliances,Washing Machine,0.003,0.01,0.003,0.02,0.01,0.002,9
+3,Large houseold Appliances,Air-conditioners,0.003,0.01,0.003,0.02,0.01,0.002,10
+4,Large houseold Appliances,Large cooling appliances,0.003,0.01,0.003,0.02,0.01,0.002,10
+5,Large houseold Appliances,Freezers,0.003,0.01,0.003,0.02,0.01,0.002,10
+6,Large houseold Appliances,Dish Washing Machines,0.003,0.01,0.003,0.02,0.01,0.002,10
+7,Large houseold Appliances,"Microwaves, Microwave Oven",0.003,0.01,0.003,0.02,0.01,0.002,10
+8,Large houseold Appliances,Other large appliances used for cooking and other processing of food,0.003,0.01,0.003,0.02,0.01,0.002,10
+9,Small Houseold Appliances,Fluorescent and other Mercury containing lamps,0.002,0.02,0.001,0.01,0.04,0.001,2
+10,Small Houseold Appliances,LED BULBS/TUBES/CONSUMER LUMINARIES & CONSUMER LED DRIVES,0.002,0.02,0.001,0.01,0.04,0.001,4
+11,Small Houseold Appliances,Clothes dryers,0.002,0.02,0.001,0.01,0.04,0.001,10
+12,Small Houseold Appliances,"Grinders, coffee machines and equipment for opening or sealing containers or packages",0.002,0.02,0.001,0.01,0.04,0.001,10
+13,Small Houseold Appliances,Electric cookers,0.002,0.02,0.001,0.01,0.04,0.001,7
+14,Small Houseold Appliances,Electric stoves,0.002,0.02,0.001,0.01,0.04,0.001,7
+15,Small Houseold Appliances,Electric hot plates,0.002,0.02,0.001,0.01,0.04,0.001,5
+16,Small Houseold Appliances,Hair dryer,0.002,0.02,0.001,0.01,0.04,0.001,5
+17,Small Houseold Appliances,Electric shaver,0.002,0.02,0.001,0.01,0.04,0.001,5
+18,Small Houseold Appliances,Electric kettle,0.002,0.02,0.001,0.01,0.04,0.001,5
+19,Small Houseold Appliances,"Other fanning, exhaust ventilation and conditioning equipment",0.002,0.02,0.001,0.01,0.04,0.001,10
+20,Small Houseold Appliances,Electric fans,0.002,0.02,0.001,0.01,0.04,0.001,10
+21,Small Houseold Appliances,Vacuum cleaners,0.002,0.02,0.001,0.01,0.04,0.001,10
+22,Small Houseold Appliances,Carpet sweepers,0.002,0.02,0.001,0.01,0.04,0.001,10
+23,Small Houseold Appliances,Other appliances for cleaning,0.002,0.02,0.001,0.01,0.04,0.001,10
+24,IT and Telecommunication, Personal Computers,0.04,0.17,0.01,0.03,0.02,0.001,6
+25,IT and Telecommunication,Laptop Computers,0.04,0.17,0.01,0.03,0.02,0.001,5
+26,IT and Telecommunication,Notebook Computers,0.04,0.17,0.01,0.03,0.02,0.001,5
+27,IT and Telecommunication,Notepad Computers,0.04,0.17,0.01,0.03,0.02,0.001,5
+28,IT and Telecommunication,Printers including cartridges,0.04,0.17,0.01,0.03,0.02,0.001,10
+29,IT and Telecommunication,Copying equipment,0.04,0.17,0.01,0.03,0.02,0.001,8
+30,IT and Telecommunication,Electrical and electronic typewriters,0.04,0.17,0.01,0.03,0.02,0.001,5
+31,IT and Telecommunication,User terminals and systems,0.04,0.17,0.01,0.03,0.02,0.001,6
+32,IT and Telecommunication,Facsimile,0.04,0.17,0.01,0.03,0.02,0.001,10
+33,IT and Telecommunication,Telex,0.04,0.17,0.01,0.03,0.02,0.001,5
+34,IT and Telecommunication,Telephones,0.04,0.17,0.01,0.03,0.02,0.001,9
+35,IT and Telecommunication,Pay telephones,0.04,0.17,0.01,0.03,0.02,0.001,9
+36,IT and Telecommunication,Cordless telephones,0.04,0.17,0.01,0.03,0.02,0.001,9
+37,IT and Telecommunication,Cellular telephones,0.04,0.17,0.01,0.03,0.02,0.001,7
+38,IT and Telecommunication,Cellular telephones ,0.04,0.17,0.01,0.03,0.02,0.001,7
+39,IT and Telecommunication,Mainframe,0.04,0.17,0.01,0.03,0.02,0.001,5
+40,IT and Telecommunication,Minicomputers,0.04,0.17,0.01,0.03,0.02,0.001,5
+41,IT and Telecommunication,Telecommunication Antenna,0.04,0.17,0.01,0.03,0.02,0.001,7
+42,IT and Telecommunication, Transmitters,0.04,0.17,0.01,0.03,0.02,0.001,5
+43,IT and Telecommunication, Wi-Fi/wireless enabled Devices,0.04,0.17,0.01,0.03,0.02,0.001,3
+44,IT and Telecommunication,Radio/Satellite Telephone,0.04,0.17,0.01,0.03,0.02,0.001,7
+45,IT and Telecommunication,walkie talkie,0.04,0.17,0.01,0.03,0.02,0.001,5
+46,IT and Telecommunication,BTS (all components excluding structure of tower),0.04,0.17,0.01,0.03,0.02,0.001,15
+47,IT and Telecommunication,"Tablets, I-PAD",0.04,0.17,0.01,0.03,0.02,0.001,5
+48,IT and Telecommunication,Phablets,0.04,0.17,0.01,0.03,0.02,0.001,5
+49,IT and Telecommunication,Scanners,0.04,0.17,0.01,0.03,0.02,0.001,5
+50,IT and Telecommunication,Routers ,0.04,0.17,0.01,0.03,0.02,0.001,5
+51,Mass Electronics,Television sets,0.01,0.08,0.002,0.04,0.03,0.002,9
+52,Mass Electronics,"Smart Watch/ Fitness Band, Bluetooth Headset,Virtual Reality Camera, etc",0.01,0.08,0.002,0.04,0.03,0.002,3
+53,Mass Electronics,GPS,0.01,0.08,0.002,0.04,0.03,0.002,5
+54,Mass Electronics,"Screen, Electronic Photo frames, Electronic Display Panel, Monitors",0.01,0.08,0.002,0.04,0.03,0.002,7
+55,Mass Electronics,Radio sets,0.01,0.08,0.002,0.04,0.03,0.002,8
+56,Mass Electronics,Set top Boxes,0.01,0.08,0.002,0.04,0.03,0.002,8
+57,Mass Electronics,Video Cameras,0.01,0.08,0.002,0.04,0.03,0.002,10
+58,Mass Electronics,Video Recorders,0.01,0.08,0.002,0.04,0.03,0.002,5
+59,Mass Electronics,Hi-Fi Recorders,0.01,0.08,0.002,0.04,0.03,0.002,5
+60,Mass Electronics," Speakers, Multi Media Speaker, Home Theatre, Sound Bar, Wireless Speaker etc",0.01,0.08,0.002,0.04,0.03,0.002,10
+61,Mass Electronics,CCTV Camera with DVR & NVR,0.01,0.08,0.002,0.04,0.03,0.002,7
+62,Mass Electronics,Projector,0.01,0.08,0.002,0.04,0.03,0.002,7
+63,Mass Electronics,Digital sound and video recorder and  player,0.01,0.08,0.002,0.04,0.03,0.002,7
+64,Mass Electronics,HDCOM USED FOR VIDEO CONFERENCING,0.01,0.08,0.002,0.04,0.03,0.002,10
+65,Mass Electronics,"Solar panels/cells, solar Photovoltaic panels/cells/modules.",0.01,0.08,0.002,0.04,0.03,0.002,15
+66,Mass Electronics,Digital camera,0.01,0.08,0.002,0.04,0.03,0.002,5
+67,Mass Electronics,Electrical trains or car racing sets,0.01,0.08,0.002,0.04,0.03,0.002,2
+68,Mass Electronics,Hand-held video games consoles,0.01,0.08,0.002,0.04,0.03,0.002,2
+69,Mass Electronics,Video games,0.01,0.08,0.002,0.04,0.03,0.002,2
+70,Mass Electronics,"Computers for biking, diving, running, rowing, etc.",0.01,0.08,0.002,0.04,0.03,0.002,5
+71,Mass Electronics,Sports equipment with electric or electronic components,0.01,0.08,0.002,0.04,0.03,0.002,5

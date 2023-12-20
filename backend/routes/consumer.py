@@ -4,8 +4,9 @@ from sqlalchemy.orm import Session
 from fastapi import Depends, HTTPException, APIRouter, status
 from fastapi.encoders import jsonable_encoder
 import services
+import datetime as dt
 
-from models import Consumers
+from models import Consumers, Producers, Transaction, Products, MetalContent
 
 router = APIRouter(
     tags = ["Consumers"]
@@ -42,3 +43,57 @@ async def create_user(
     db.commit()
     db.refresh(user_obj)
     return user_obj
+
+
+@router.get("/consumer/req_queue", response_model=List[schemas.ProdRequests])
+def request_queue(cid, db: Session = Depends(services.get_db)):
+    trans = db.query(Transaction).filter(Transaction.cid == cid).all()
+    return trans
+
+
+@router.put("/consumer/response")
+def accept_or_reject(id, status, db: Session = Depends(services.get_db)):
+    ui=schemas.ConsResponse(
+        tid=id,
+        status=status,
+        date_updated=dt.datetime.utcnow()
+    )
+    update_item=jsonable_encoder(ui)
+    # print(update_item)
+    trans = db.query(Transaction).filter(Transaction.tid == id)
+
+    if not trans.first():
+        raise HTTPException(status_code=404, detail="Transaction not found")
+    else:
+        trans.update(update_item)
+
+    db.commit()
+    return 'updated'
+
+
+@router.get("/consumer/order_history", response_model=List[schemas.ProdRequests])
+def request_queue(cid, db: Session = Depends(services.get_db)):
+    trans = db.query(Transaction).filter(Transaction.cid == cid).all()
+    return trans
+
+
+@router.put("/consumer/assign")
+def accept_or_reject(pid, db: Session = Depends(services.get_db)):
+    trans = db.query(Transaction).filter(Transaction.pid == pid).first()
+    product = db.query(Products).filter(Products.did==trans.did).first()
+    metal = db.query(MetalContent).filter(MetalContent.device_type==product.device_type)
+
+    ui=schemas.Credit(
+        credit=services.kartavya_points(product.condition,metal.gold,metal.silver,metal.palladium,metal.lead,metal.mercury,metal.cadmium,metal.average_life)
+    )
+    update_item=jsonable_encoder(ui)
+    # print(update_item)
+    person = db.query(Producers).filter(Producers.pid==pid)
+
+    if not person.first():
+        raise HTTPException(status_code=404, detail="Transaction not found")
+    else:
+        person.update(update_item)
+
+    db.commit()
+    return 'updated'

@@ -1,4 +1,4 @@
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, Time, DateTime, Date, func
+from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, Time, DateTime, Date, func, Float
 from database import Base
 from sqlalchemy.orm import relationship
 import passlib.hash as hash
@@ -8,7 +8,7 @@ import datetime as dt
 class Producers(Base):
     __tablename__ = 'producers'
 
-    pid = Column(Integer, primary_key=True, index=True, nullable=False, autoincrement=True, server_default=func.coalesce(func.max(id), 0))
+    pid = Column(Integer, primary_key=True, index=True, nullable=False, autoincrement=True)
     pname = Column(String, index=True, nullable=False)
     category = Column(String, index=True, nullable=False)
     email = Column(String, index=True, unique=True, nullable=False)
@@ -53,9 +53,8 @@ class Products(Base):
     __tablename__ = 'products'
 
     did = Column(Integer, primary_key=True, index=True, nullable=False, autoincrement=True)
-    dname = Column(String, index=True, nullable=False)
     category = Column(String, index=True, nullable=False)
-    brand_name = Column(String, index=True, nullable=False)
+    device_type = Column(String, index=True, nullable=False)
     model = Column(String, index=True, nullable=False)
     quantity = Column(Integer, index=True, nullable=False)
     condition = Column(String, index=True, nullable=False)
@@ -74,7 +73,6 @@ class Transaction(Base):
     status = Column(String, index=True, nullable=False)
     delivery_pname = Column(String, index=True)
     delivery_phno = Column(String, index=True)
-    created = Column(DateTime, index=True, default=dt.datetime.utcnow)
     response_date = Column(Date, index=True)
     date_created = Column(DateTime, default=dt.datetime.utcnow) #ETL Audit Date
     date_updated = Column(DateTime, default=dt.datetime.utcnow) #ETL Audit Date
@@ -82,3 +80,18 @@ class Transaction(Base):
     prod = relationship("Producers", back_populates="prod")
     cons = relationship("Consumers", back_populates="cons")
     item = relationship("Products", back_populates="item")
+
+
+class MetalContent(Base):
+    __tablename__ = 'metalcontent'
+
+    mid = Column(Integer, primary_key=True, index=True, nullable=False, autoincrement=True)
+    category = Column(String, index=True, nullable=False)
+    device_type = Column(String, index=True, nullable=False)
+    gold = Column(Float, index=True, nullable=False)
+    silver = Column(Float, index=True, nullable=False)
+    palladium = Column(Float, index=True, nullable=False)
+    lead = Column(Float, index=True, nullable=False)
+    mercury = Column(Float, index=True, nullable=False)
+    cadmium = Column(Float, index=True, nullable=False)
+    average_life = Column(Integer, index=True, nullable=False)
