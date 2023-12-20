@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "./AddProduct.module.css";
-import { useNavigate } from "react-router-dom";
 
-const AddProductModal = () => {
-  //   returnlocation = ""
-
-  const navigate = useNavigate();
+const AddProductModal = ({ onClose }) => {
   const handleCloseButtonClick = () => {
-    // Navigate to the Dashboard component when the "Close" button is clicked
-    navigate("/producer/dashboard");
+    // Call onClose function to close the modal
+    if (onClose) {
+      onClose();
+    }
   };
   return (
     <div className={styles.popupcontainer}>

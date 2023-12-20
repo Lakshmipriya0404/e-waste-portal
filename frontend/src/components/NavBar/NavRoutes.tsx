@@ -10,6 +10,7 @@ import ProducerDashboard from "../../routes/ProducerDashboard/ProducerDashboard"
 import ConsumerDashboard from "../../routes/ConsumerDashboard/ConsumerDashboard";
 import Estats from "../../routes/Estats/Estats";
 import AboutFacilitator from "../../sections/AboutFacilitator/AboutFacilitator";
+import FacilityLocator from "../../sections/Locator/FacilityLocator";
 
 export const NavRoutes = [
   {
@@ -33,9 +34,9 @@ export const NavRoutes = [
     meta: { name: "FAQ" },
   },
   {
-    path: "contact",
-    element: <Contact />,
-    meta: { name: "Contact Us" },
+    path: "locator",
+    element: <FacilityLocator />,
+    meta: { name: "Locator" },
   },
   {
     path: "estats",
