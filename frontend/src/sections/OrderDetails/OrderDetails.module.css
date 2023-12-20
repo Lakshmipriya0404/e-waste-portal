@@ -17,7 +17,7 @@
 .subheader {
   width: 250px;
   font-weight: bold;
-  margin-left: 13%;
+  margin-left: 35%;
   margin-top: 4%;
   font-size: 20px;
 }
@@ -52,7 +52,7 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-left: 17%;
+  margin-left: 37%;
   margin-top: 7%;
 }
 
@@ -65,7 +65,7 @@
   border-collapse: collapse;
   width: 75%;
   /* margin-top: 2%; */
-  margin-left: 0%;
+  margin-left: 10%;
 }
 
 .requests td,
@@ -90,7 +90,7 @@
 .button {
   display: flex;
   align-items: center;
-  margin-left: 30%;
+  margin-left: 40%;
   margin-bottom: 3%;
   margin-top: 3%;
   gap: 10px;

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
 
 .home{
-    background-color: #daeadd;
+    background-color: #E1F5FE;
     height: 100%;
     padding: 0% 10%;
   }
@@ -110,15 +110,15 @@
   }
   
   button {
-    background-color: #55B76B;
-    color: #fff;
+    background-color: #050539;
+    color: white;
     padding: 10px;
     cursor: pointer;
     width: 200px;
     border-radius: 5px;
-    border-top: #55B76B;
-    border-left: #55B76B;
-    border-right: #55B76B;
+    border-top: #100970;
+    border-left: #2e0a7a;
+    border-right: #1c0b67;
     font-size: 20px;
   }
 

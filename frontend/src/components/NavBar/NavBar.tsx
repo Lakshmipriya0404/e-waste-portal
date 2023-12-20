@@ -26,6 +26,7 @@ const NavBar: React.FC = () => {
         ))}
       </div>
       <div>
+      {/* <button>हिंदी / English</button> */}
         <Outlet />
       </div>
     </div>

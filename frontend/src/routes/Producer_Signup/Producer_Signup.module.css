@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
 
 .home{
-    background-color: #050539;
+    background-color: #daeadd;
     height: 100%;
     padding: 0% 10%;
   }
@@ -22,7 +22,7 @@
     text-align: center;
     width: 100%;
     margin-top: 20%;
-    border: 1px solid whitesmoke;
+    border: 1px solid black;
     border-radius: 8px;
     padding: 5%;
   }
@@ -31,7 +31,7 @@
     font-size: 32px;
     font-weight: bold;
     padding: 3%;
-    color: whitesmoke;
+    color: black;
     font-family: "Literata";
     font-style: italic;
   }
@@ -54,7 +54,7 @@
     font-size: 26px;
     padding-right: 14%;
     padding-bottom: 7%;
-    color: whitesmoke;
+    color: black;
   }
   
   
@@ -71,7 +71,7 @@
     padding-top: 3%;
     font-size: 26px;
     padding-right: 7%;
-    color: whitesmoke;
+    color: black;
     font-family: "Literata";
     font-style: italic;
   }
@@ -98,7 +98,7 @@
   
   button {
     background-color: #007bff;
-    color: #fff;
+    color: black;
     padding: 10px;
     cursor: pointer;
     width: 200px;

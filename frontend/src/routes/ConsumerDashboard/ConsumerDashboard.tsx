@@ -15,11 +15,11 @@ const ConsumerDashboard = () => {
         throw new Error("Function not implemented.");
       } }/>
       <div className={styles.mainboard}>
-         <ConsumerProfile />
-        <RequestQueue />
-        <OrderDetails/>
+         {/* <ConsumerProfile /> */}
+        {/* <RequestQueue /> */}
+        {/* <OrderDetails/> */}
         <RequestDetails/>
-        <AddProductModal onClose={undefined} onAddProduct={undefined}/>
+        {/* <AddProductModal onClose={undefined} onAddProduct={undefined}/> */}
       </div>
     </div>
   );
