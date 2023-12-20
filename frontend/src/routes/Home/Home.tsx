@@ -6,6 +6,7 @@ import Carousel from "../../components/Slider/Carousel";
 import Contactus from "../../sections/Contactus/Contactus";
 import logo from "../../assets/E_-_KARTAVYA__1_-removebg-preview.png";
 import logogovt from "../../assets/Group 1000002792Homepage-GovtLogo.png";
+import stat from "../../assets/info cust.png";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         </div>
         </div>
         <div className={styles.container1}>
+          <div className={styles.container3}>
           <div className={styles.first}>
             <div className={styles.firsttext}>
               <div className={styles.image}>
@@ -24,14 +26,21 @@ const Home = () => {
               </div>
               <br />
               <div className={styles.subtitle}>
-                The Green Future of E-Waste Disposal
+                The Green Future of E-Waste Disposal           
               </div>
             </div>
+            <div className={styles.stata}>
+              <img className={styles.statlogo} src={stat} alt="User Statistics"/>
+            </div>
+           
           </div>
+          </div>
+          
           <div className={styles.second}>
             <Carousel />
           </div>
         </div>
+        
       </div>
       <Contactus />
     </>
