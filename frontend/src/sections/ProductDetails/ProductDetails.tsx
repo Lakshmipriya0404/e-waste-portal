@@ -4,7 +4,7 @@ import AddProductModal from "../../components/AddProductModal/AddProductModal";
 
 const ProductDetails = () => {
   const [isAddProductModalOpen, setAddProductModalOpen] = useState(false);
-
+  const [productData, setProductData] = useState(null);
   const openAddProductModal = () => {
     setAddProductModalOpen(true);
   };
@@ -12,7 +12,13 @@ const ProductDetails = () => {
   const closeAddProductModal = () => {
     setAddProductModalOpen(false);
   };
+  const handleAddProduct = (formData) => {
+    // Handle the form data received from AddProductModal
+    console.log("Form Data:", formData);
 
+    // Set the product data in the state or perform any other actions
+    setProductData(formData);
+  };
   return (
     <div className={styles.detailswrap}>
       <div className={styles.header}>
@@ -26,7 +32,10 @@ const ProductDetails = () => {
       </div>
 
       {isAddProductModalOpen && (
-        <AddProductModal onClose={closeAddProductModal} />
+        <AddProductModal
+          onClose={closeAddProductModal}
+          onAddProduct={handleAddProduct}
+        />
       )}
     </div>
   );
