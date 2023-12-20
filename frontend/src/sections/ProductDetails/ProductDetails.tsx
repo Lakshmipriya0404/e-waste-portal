@@ -24,7 +24,7 @@ const ProductDetails = () => {
         {/* <a href="">back icon</a> */}
         <h2>Product Details</h2>
         <div className={styles.table}>
-          <table>
+          <table className={styles.requests}>
             <thead>
               <tr>
                 <th>Category</th>
