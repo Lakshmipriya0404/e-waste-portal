@@ -3,23 +3,28 @@ import "./Popup.css";
 import { useNavigate } from "react-router-dom";
 //import Dashboard from '../Dashboardpage/dashboard';
 
-function Popup() {
-  const info = [
-    "E-waste contains toxins like lead and mercury that cause significant e-waste health issues. Yet, still, over 90% of it is disposed of improperly either by processing using dangerous techniques or dumping into landfills.",
+function Popup( x:string ) {
 
-    "Drastic and urgent actions are needed now to stop the flow of waste and stem the tide of   e-waste health issues.",
+  const info = {
+    "phone": [ "Many smartphones and tablets contain hazardous materials. Drop them off at designated e-waste collection points or recycle them through manufacturer programs."],
+    
+    "pc": ["Donate or recycle old computers. Many components, like batteries and circuit boards, can harm the environment if not disposed of properly"],
+    
+    "printer": ["Old printers and scanners often contain toxic materials. Recycle them through local e-waste programs to reduce environmental impact."],
+    
+    "play stations": ["Gaming consoles can be recycled through manufacturer programs or e-waste facilities. Don't let your old console end up in a landfill! "],
+    
+    "camera" : ["Dispose of old cameras and camcorders at electronic recycling facilities. Unload your memories responsibly."],
+    
+  };
+  
+  const device = "play stations"; //
 
-    "Exposure to the harmful chemicals from e-waste creates severe health hazards that can be fatal. The toxins enter our bodies through inhalation, ingestion of food or water, and skin absorption.",
+  const len = info[device].length
+  
+  const key = Math.floor(Math.random() * (len-1));
+  const content = info[device]
 
-    "When electronic waste is thrown away in landfills their toxic materials seep into groundwater, affecting both land and sea animals. This can also affect the health of the people in the developing countries where most of the electronic waste in dumped",
-
-    "The hazards to health from electronic waste must not be underestimated. Recycling e-waste in a safe and non-harmful way can be costly, and there isn't enough capacity to cope with the mountains of waste.",
-  ];
-
-  const min = 0;
-  const max = info.length;
-
-  const i = Math.floor(Math.random() * (max - min) + min);
   const navigate = useNavigate();
   const handleCloseButtonClick = () => {
     // Navigate to the Dashboard component when the "Close" button is clicked
@@ -35,7 +40,7 @@ function Popup() {
             fontFamily: "Calibri",
           }}
         >
-          {info[i]}
+          {content[key]}
         </p>
         <button onClick={handleCloseButtonClick}>Close</button>
       </div>

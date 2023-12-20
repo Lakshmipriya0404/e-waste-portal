@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./AddProduct.module.css";
 
 const AddProductModal = ({ onClose }) => {
@@ -24,6 +24,7 @@ const AddProductModal = ({ onClose }) => {
           </div>
           <div className={styles.category}>
             <label htmlFor="category">Category</label>
+
             <select name="category" id="category">
               <option value="processor">Centralized Data Processing</option>
               <option value="PC">PC</option>
@@ -57,9 +58,10 @@ const AddProductModal = ({ onClose }) => {
             <input type="file" id="imageUpload" name="image" accept="image/*" />
           </div>
         </div>
-        <button className={styles.addbutton} onClick={handleCloseButtonClick}>
-          Add Product
-        </button>
+        <div>
+          <button className={styles.addbutton}>Add Product</button>
+          <button className={styles.addbutton}>Close</button>
+        </div>
       </div>
     </div>
   );

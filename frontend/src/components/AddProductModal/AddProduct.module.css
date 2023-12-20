@@ -20,8 +20,8 @@
   margin: auto;
   border-radius: 15px;
   border-color: black;
-  background: #e1f5fe;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #daeadd;
+  box-shadow: rgba(6, 140, 46, 0.35) 0px 5px 15px;
   font: 20px;
 }
 
@@ -53,16 +53,16 @@
     /* font-style: italic; */
 }
 
-.addbutton {
+button {
   margin: 5%;
-  background-color: #10143e;
-  border: #191f68;
+  background-color: #46ad5c;
+  border: #46ad5c;
   padding: 15px;
   width: 25%;
 }
 
-.addbutton:hover {
-  background-color: #111a80;
+button:hover {
+  background-color: #0a8b31;
 }
 
 select{
