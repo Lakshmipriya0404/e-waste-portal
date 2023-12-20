@@ -25,3 +25,5 @@ export const GetLocations = (
     },
   });
 };
+
+export const ProducerSignUp = (pdata: )

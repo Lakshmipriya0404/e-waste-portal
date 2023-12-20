@@ -30,7 +30,9 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
     }));
   };
 
-  const handleAddProductClick = () => {
+  const handleAddProductClick = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+
     // Call the onAddProduct function with the form data
     if (onAddProduct) {
       onAddProduct(formData);
@@ -47,7 +49,7 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
       <div className={styles.popupbody}>
         <h1>Add Product</h1>
         <div className={styles.popupcontents}>
-          <form action="">
+          <form onSubmit={handleAddProductClick}>
             <div className={styles.modelname}>
               <label>Model Name</label>
               <input
@@ -56,13 +58,15 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
                 className={styles.input_text}
                 name="name"
                 placeholder="Name"
+                onChange={handleInputChange}
+                required
               />
             </div>
 
             <div className={styles.category}>
               <label htmlFor="category">Category</label>
 
-              <select name="category" id="category">
+              <select name="category" id="category" required>
                 <option value="processor">Centralized Data Processing</option>
                 <option value="PC">PC</option>
                 <option value="Laptop">Laptop</option>
@@ -82,7 +86,7 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
             </div>
             <div className={styles.condition}>
               <label htmlFor="condition">Condition</label>
-              <select name="condition" id="condition">
+              <select name="condition" id="condition" required>
                 <option value="working">Working</option>
                 <option value="notworking">Not Working</option>
                 <option value="damaged">Damaged</option>
@@ -96,13 +100,11 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
                 name="image"
                 accept="image/*"
                 onChange={handleFileChange}
+                required
               />
             </div>
             <div className={styles.button}>
-              <button
-                className={styles.addbutton}
-                onSubmit={handleAddProductClick}
-              >
+              <button className={styles.addbutton} type="submit">
                 Add Product
               </button>
               <button

@@ -11,12 +11,12 @@ const Signup = () => {
           TELL US WHO YOU ARE
         </div>
         <div className={styles.cardcontainer}>
-          <a className={styles.cardproducer} href="">
+          <a className={styles.cardproducer} href="/producer/signup">
             <img src={prod} />
             <div className={styles.text}>PRODUCER</div>
           </a>
-          <a className={styles.cardconsumer} href="">
-            <img src={prod} />
+          <a className={styles.cardconsumer} href="/consumer/signup">
+            <img src="" alt="" />
             <div className={styles.text}>CONSUMER</div>
           </a>
         </div>
