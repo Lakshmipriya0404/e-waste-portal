@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Producer_Signup.module.css";
-interface FormDataProps {
+import { ProducerSignUp } from "../../api";
+export interface FormDataProps {
   pname: string;
   category: string;
   email: string;
@@ -31,7 +32,7 @@ const Producer_Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    ProducerSignUp(formData);
   };
 
   return (
