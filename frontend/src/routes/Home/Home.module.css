@@ -1,3 +1,5 @@
+/* Home.module.css */
+
 .homewrap {
   position: relative;
   display: flex;
@@ -18,11 +20,28 @@
   filter: blur(5px);
   z-index: 0;
 }
+
 .container1 {
   display: flex;
-  margin-top: 100px;
+  margin-top: 5px;
   z-index: 1;
 }
+
+.container2 {
+  display: flex;
+  margin-top: 70px;
+  margin-left: 30%;
+  z-index: 1;
+  align-items: center;
+}
+
+.container3 {
+  display: flex;
+  margin-left: 10%;
+  z-index: 1;
+  align-items: center;
+}
+
 .first {
   font-size: 40px;
   font-weight: 700;
@@ -33,14 +52,52 @@
   align-items: center;
   text-align: center;
 }
+
 .firsttext {
   padding-bottom: 30%;
-  text-shadow: 0 0 3px #00ff1e3d, 0 0 5px #ff3700;
+  text-shadow: 0 0 3px #00ff1e3d, 0 0 5px #0073ff7c;
 }
+
 .subtitle {
   color: #5b9739;
+  font-family:'Times New Roman', Times, serif;
 }
+
 .second {
   flex: 1;
   height: 100vh;
+  margin: 0% 15%;
+}
+
+.pageLogo {
+  height: 120px;
+  width: 320px;
+  opacity: 1; /* Adjusted opacity property */
+}
+
+.govtLogo {
+  height: 120px;
+  width: 620px;
+  z-index: 1;
+  margin-top: 5px; 
+  margin-bottom: 40px;
+}
+
+.statlogo {
+  height: 150px;
+  width: 450px;
+  z-index: 1;
+  /* margin-top: 5px; Adjusted margin-top for vertical alignment */
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+}
+
+.stata{
+  display: flex;
+  align-items: center;
+  margin-bottom:40px;
 }

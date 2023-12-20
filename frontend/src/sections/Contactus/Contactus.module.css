@@ -33,14 +33,16 @@
 }
 
 .headertext {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 650;
   padding-top: 50px;
   padding-right: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 .text,
 FontAwesomeIcon {
   margin-left: 2%;
   /* margin-bottom: 2%; */
   font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
 }
