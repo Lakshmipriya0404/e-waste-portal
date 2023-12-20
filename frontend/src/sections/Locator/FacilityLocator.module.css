@@ -95,7 +95,12 @@
   padding: 15px;
   text-align: center;
 }
-
+.requests tr a {
+  text-decoration: none;
+  color: black;
+  border: none;
+  outline: 0;
+}
 .requests tr:nth-child(even) {
   background-color: #d4f8d3;
 }

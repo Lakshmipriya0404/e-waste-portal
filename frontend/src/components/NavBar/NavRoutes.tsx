@@ -9,6 +9,7 @@ import Signup from "../../routes/Signup/Signup";
 import ProducerDashboard from "../../routes/ProducerDashboard/ProducerDashboard";
 import ConsumerDashboard from "../../routes/ConsumerDashboard/ConsumerDashboard";
 import Estats from "../../routes/Estats/Estats";
+import AboutFacilitator from "../../sections/AboutFacilitator/AboutFacilitator";
 
 export const NavRoutes = [
   {
@@ -60,5 +61,10 @@ export const NavRoutes = [
     path: "consumer/dashboard",
     element: <ConsumerDashboard />,
     meta: { name: "Consumer Dashboard" },
+  },
+  {
+    path: "producer/dashboard/:id?/about",
+    element: <AboutFacilitator />,
+    meta: { name: "About Facilitator" },
   },
 ];

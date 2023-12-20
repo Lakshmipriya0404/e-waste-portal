@@ -28,12 +28,12 @@
   color: black;
 }
 
-.pageLogo{
+.pageLogo {
   height: 50px;
   width: 150px;
 }
 
 .image {
-  display: flex; /* Added this line to enable flex properties on the image container */
-  align-items: center; /* Added this line to vertically center the logo */
+  display: flex;
+  align-items: center;
 }
