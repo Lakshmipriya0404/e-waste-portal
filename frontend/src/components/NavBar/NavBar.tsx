@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
         <div className={styles.image}>
           <img className={styles.pageLogo} src={logo} />
         </div>
-        {NavRoutes.slice(0, 6).map((route, index) => (
+        {NavRoutes.slice(0, 8).map((route, index) => (
           <NavItem key={index} path={route.path} name={route.meta.name} />
         ))}
       </div>

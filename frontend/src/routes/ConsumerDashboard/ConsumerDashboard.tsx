@@ -14,11 +14,11 @@ const ConsumerDashboard = () => {
     <div className={styles.mainwrap}>
       <ConsumerSidebar />
       <div className={styles.mainboard}>
-        {/* <ConsumerProfile />
+        <ConsumerProfile />
         <RequestQueue />
-        <OrderDetails/>
-        <RequestDetails/> */}
-
+        <OrderDetails />
+        <RequestDetails />
+        {/* <AddProductModal/> */}
       </div>
     </div>
   );

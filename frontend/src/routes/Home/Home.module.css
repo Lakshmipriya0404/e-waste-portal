@@ -24,7 +24,7 @@
   z-index: 1;
 }
 .first {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   flex: 1;
   display: flex;
@@ -35,6 +35,7 @@
 }
 .firsttext {
   padding-bottom: 30%;
+  text-shadow: 0 0 3px #00ff1e3d, 0 0 5px #ff3700;
 }
 .subtitle {
   color: #5b9739;

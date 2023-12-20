@@ -1,5 +1,3 @@
-//producer profile
-// producer profile
 import React from "react";
 import styles from "./RequestQueue.module.css";
 

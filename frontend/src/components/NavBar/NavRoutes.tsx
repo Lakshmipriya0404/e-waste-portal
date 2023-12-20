@@ -8,6 +8,9 @@ import Login from "../../routes/Login/Login";
 import Signup from "../../routes/Signup/Signup";
 import ProducerDashboard from "../../routes/ProducerDashboard/ProducerDashboard";
 import ConsumerDashboard from "../../routes/ConsumerDashboard/ConsumerDashboard";
+import Estats from "../../routes/Estats/Estats";
+import AboutFacilitator from "../../sections/AboutFacilitator/AboutFacilitator";
+import FacilityLocator from "../../sections/Locator/FacilityLocator";
 
 export const NavRoutes = [
   {
@@ -31,9 +34,14 @@ export const NavRoutes = [
     meta: { name: "FAQ" },
   },
   {
-    path: "contact",
-    element: <Contact />,
-    meta: { name: "Contact Us" },
+    path: "locator",
+    element: <FacilityLocator />,
+    meta: { name: "Locator" },
+  },
+  {
+    path: "estats",
+    element: <Estats />,
+    meta: { name: "E-Stats" },
   },
   {
     path: "login",
@@ -54,5 +62,10 @@ export const NavRoutes = [
     path: "consumer/dashboard",
     element: <ConsumerDashboard />,
     meta: { name: "Consumer Dashboard" },
+  },
+  {
+    path: "producer/dashboard/:id?/about",
+    element: <AboutFacilitator />,
+    meta: { name: "About Facilitator" },
   },
 ];
