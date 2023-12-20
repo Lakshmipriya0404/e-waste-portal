@@ -101,3 +101,39 @@
   align-items: center;
   margin-bottom:40px;
 }
+
+.translate-button{
+  background-color: #022c0c; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    font-weight: bolder;
+    justify-content: flex-end;
+    margin-left: 10%
+}
+
+.container4 {
+  display: flex;
+  margin-left: 10%;
+  z-index: 1;
+  align-items: center;
+}
+
+.bharat{
+  height: 100px;
+  width: 100px;
+  justify-content: flex-start;
+  
+}
+
+.chat_button{
+  border-radius: 1000%;
+  height: 100px;
+  width: 100px;
+  justify-content: flex-start;
+  background-color: white;
+}
