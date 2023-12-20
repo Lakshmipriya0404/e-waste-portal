@@ -7,7 +7,7 @@
   /* padding: 20px; */
 }
 
-.ratingImage{
+.ratingImage {
   width: 500px;
   margin-top: 10%;
   margin-left: 2%;
@@ -21,19 +21,33 @@
   margin-top: 5%;
 }
 
-.creditcard{
+.creditcard {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border: #daeadd;
   background-color: #daeadd;
   border-radius: 17px;
+  margin-left: 15%;
 }
 
- /* .row {
-  display: flex;
-  margin-bottom: 10px;
-} */
+.creditcard h1 {
+  padding: 20%;
+  width: 300px;
+  font-size: 25px;
+}
+
+.creditcard p {
+  padding-left: 30%;
+  width: 300px;
+  font-size: 70px;
+  color: #0a8b31;
+  font-weight: 700;
+}
+
+.creditcardImage {
+  margin-left: 4%;
+}
 
 .header {
   font-size: 30px;
@@ -42,8 +56,7 @@
   margin-left: 50%;
 }
 
-
-.subvalue{
+.subvalue {
   padding-top: 1.5%;
   font-size: 24px;
   padding-left: 5%;
@@ -82,4 +95,3 @@
 .button button:hover {
   background-color: #0a8b31;
 }
-
