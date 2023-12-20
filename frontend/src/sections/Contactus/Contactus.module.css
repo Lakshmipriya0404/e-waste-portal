@@ -1,0 +1,46 @@
+.container2 {
+  background-color: #55b76c;
+  display: flex;
+}
+.art {
+  flex: 1;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* margin-bottom: 0.25%; */
+  margin-left: 40%;
+}
+.contact a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.headertext {
+  font-size: 42px;
+  font-weight: 650;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+.text,
+FontAwesomeIcon {
+  margin-left: 2%;
+  /* margin-bottom: 2%; */
+  font-size: 26px;
+}

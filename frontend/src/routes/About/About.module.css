@@ -1,0 +1,68 @@
+.main_container {
+  padding-top: 2.5%;
+  padding-bottom: 7%;
+}
+
+.title_aboutus {
+  color: "black";
+  font-size: 48px;
+  padding-top: 100px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  overflow-wrap: normal;
+  text-align: center;
+}
+
+.title_ewsachh {
+  color: #55b76b;
+  font-size: 40px;
+  font-family: "Arimo";
+  font-weight: 700;
+  letter-spacing: 2px;
+  overflow-wrap: normal;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.text_container {
+  width: 80%;
+  margin: auto;
+  /* padding-top: 20px; */
+}
+
+.content_ewsachh {
+  color: #333333;
+  font-size: 26px;
+  font-family: "Literata";
+  font-weight: 400;
+  letter-spacing: 3px;
+  overflow-wrap: normal;
+  text-align: center;
+  padding-top: 34px;
+}
+
+.mission_vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_mission_vision {
+  padding-top: 25px;
+}
+
+.image_mission_vision {
+  padding-top: 75px;
+}
+
+.title_mission_vision {
+  color: black;
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 2px;
+  overflow-wrap: normal;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 30px;
+}

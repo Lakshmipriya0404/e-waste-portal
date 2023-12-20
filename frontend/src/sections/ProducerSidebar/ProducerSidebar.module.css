@@ -1,0 +1,56 @@
+
+.sideboard {
+  background-color: #daeadd;
+  width: max-content;
+  position: fixed;
+  height: 100vh;
+  padding: 25px;
+}
+
+.profileimg {
+  margin-top: 80px;
+  margin-left: 110px;
+  width: 70px;
+  height: 70px;
+}
+
+.welcome {
+  margin-left: 26%;
+  margin-top: 7%;
+  font-size: 30px;
+}
+
+.sidebtn {
+  margin-left: 15%;
+  margin-top: 15%;
+  margin-bottom: 6%;
+  width: 70%;
+  background-color: #46ad5c;
+  border: #1f7331;
+  padding: 15px;
+}
+
+.sidebarlist {
+  margin-top: 20px;
+}
+
+.listgroup {
+  margin-left: 15%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 20px;
+}
+
+.item:hover {
+  background-color: #f0f0f0; /* Add your preferred hover background color */
+}
+
+.text {
+  margin-left: 10px;
+}
