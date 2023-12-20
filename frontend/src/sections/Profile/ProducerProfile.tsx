@@ -1,16 +1,24 @@
-//producer profile
 import React from "react";
 import styles from "./ProducerProfile.module.css";
 import coins from "../../assets/UserDashboard-Credit_Money_Image-removebg-preview.png";
 
-const Profile = () => {
+interface ProfileData {
+  pname: string;
+  category: string;
+  email: string;
+  phone: string;
+  address: string;
+  credits: number;
+}
+
+const Profile: React.FC<{ data: ProfileData | null }> = ({ data }) => {
   const subHeaders = ["NAME", "CATEGORY", "PHONE NO", "EMAIL ID", "ADDRESS"];
   const subValues = [
-    "John Doe",
-    "Category",
-    "123-456-7890",
-    "john@example.com",
-    "123 Main St",
+    data?.pname || "N/A",
+    data?.category || "N/A",
+    data?.phone || "N/A",
+    data?.email || "N/A",
+    data?.address || "N/A",
   ];
 
   return (
@@ -18,10 +26,10 @@ const Profile = () => {
       <div className={styles.creditcard}>
         <div className={styles.creditcardText}>
           <h1>Kartavya Points Earned!</h1>
-          <p>100 kp</p>
+          <p>{data?.credits || 0} kp</p>
         </div>
         <div className={styles.creditcardImage}>
-        <img src={coins} />
+          <img src={coins} alt="Coins" />
         </div>
       </div>
       <div className={styles.profile}>

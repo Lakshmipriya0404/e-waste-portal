@@ -30,3 +30,7 @@ export const GetLocations = (
 export const ProducerSignUp = (pdata: FormDataProps) => {
   return axios.post(apiUrl + "producer/producer_signup", pdata);
 };
+
+export const ProducerData = (email: string) => {
+  return axios.get(apiUrl + "producer/profile/view/" + email);
+};

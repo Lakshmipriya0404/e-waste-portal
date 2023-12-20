@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Producer_Signup.module.css";
+import { useNavigate } from "react-router-dom";
 import { ProducerSignUp } from "../../api";
 export interface FormDataProps {
   pname: string;
@@ -12,6 +13,7 @@ export interface FormDataProps {
   pincode: string;
 }
 const Producer_Signup = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     pname: "",
     category: "",
@@ -23,16 +25,17 @@ const Producer_Signup = () => {
     pincode: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     ProducerSignUp(formData);
+    navigate("/producer/dashboard", { state: { email: formData.email } });
   };
 
   return (
