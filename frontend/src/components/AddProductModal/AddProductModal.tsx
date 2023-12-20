@@ -1,13 +1,47 @@
 import React, { useState } from "react";
 import styles from "./AddProduct.module.css";
 
-const AddProductModal = ({ onClose }) => {
+const AddProductModal = ({ onClose, onAddProduct }) => {
   const handleCloseButtonClick = () => {
-    // Call onClose function to close the modal
     if (onClose) {
       onClose();
     }
   };
+  const [formData, setFormData] = useState({
+    modelName: "",
+    category: "",
+    condition: "",
+    image: null,
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setFormData((prevData) => ({
+      ...prevData,
+      image: file,
+    }));
+  };
+
+  const handleAddProductClick = () => {
+    // Call the onAddProduct function with the form data
+    if (onAddProduct) {
+      onAddProduct(formData);
+    }
+
+    // Close the modal
+    if (onClose) {
+      onClose();
+    }
+  };
+
   return (
     <div className={styles.popupcontainer}>
       <div className={styles.popupbody}>
@@ -55,12 +89,22 @@ const AddProductModal = ({ onClose }) => {
 
           <div className={styles.images}>
             <label htmlFor="imageUpload">Choose an image:</label>
-            <input type="file" id="imageUpload" name="image" accept="image/*" />
+            <input
+              type="file"
+              id="imageUpload"
+              name="image"
+              accept="image/*"
+              onChange={handleFileChange}
+            />
           </div>
         </div>
         <div>
-          <button className={styles.addbutton}>Add Product</button>
-          <button className={styles.addbutton}>Close</button>
+          <button className={styles.addbutton} onSubmit={handleAddProductClick}>
+            Add Product
+          </button>
+          <button className={styles.addbutton} onClick={handleCloseButtonClick}>
+            Close
+          </button>
         </div>
       </div>
     </div>
