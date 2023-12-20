@@ -8,10 +8,11 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
     }
   };
   const [formData, setFormData] = useState({
-    modelName: "",
+    model: "",
     category: "",
     condition: "",
-    image: null,
+    device_type: "",
+    quantity: 1,
   });
 
   const handleInputChange = (e) => {
@@ -19,14 +20,6 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
-    }));
-  };
-
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    setFormData((prevData) => ({
-      ...prevData,
-      image: file,
     }));
   };
 
@@ -54,19 +47,32 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
               <label>Model Name</label>
               <input
                 type="text"
-                id="name"
+                id="model"
                 className={styles.input_text}
-                name="name"
-                placeholder="Name"
+                name="model"
+                placeholder="model"
                 onChange={handleInputChange}
                 required
               />
             </div>
-
             <div className={styles.category}>
-              <label htmlFor="category">Category</label>
-
+              <label htmlFor="Category">Category</label>
               <select name="category" id="category" required>
+                <option value="Large houseold Appliances">
+                  Large houseold Appliances
+                </option>
+                <option value="Small Houseold Appliances">
+                  Small Houseold Appliances
+                </option>
+                <option value="IT and Telecommunication">
+                  IT and Telecommunication
+                </option>
+                <option value="Mass Electronics">Mass Electronics</option>
+              </select>
+            </div>
+            <div className={styles.device}>
+              <label htmlFor="Device Type">Device Type</label>
+              <select name="device_type" id="device_type" required>
                 <option value="processor">Centralized Data Processing</option>
                 <option value="PC">PC</option>
                 <option value="Laptop">Laptop</option>
@@ -91,17 +97,6 @@ const AddProductModal = ({ onClose, onAddProduct }) => {
                 <option value="notworking">Not Working</option>
                 <option value="damaged">Damaged</option>
               </select>
-            </div>
-            <div className={styles.images}>
-              <label htmlFor="imageUpload">Choose an image:</label>
-              <input
-                type="file"
-                id="imageUpload"
-                name="image"
-                accept="image/*"
-                onChange={handleFileChange}
-                required
-              />
             </div>
             <div className={styles.button}>
               <button className={styles.addbutton} type="submit">
