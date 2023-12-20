@@ -18,7 +18,7 @@ const Profile = () => {
       <div className={styles.creditcard}>
         <div className={styles.creditcardText}>
           <h1>Kartavya Points Earned!</h1>
-          <p>100 kp</p>
+          <p>180 Kp</p>
         </div>
         <div className={styles.creditcardImage}>
         <img src={coins} />

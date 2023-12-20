@@ -13,10 +13,10 @@ const Login = () => {
                   <input type="radio" id="producer" name="userType" />
                   <label htmlFor="producer">Producer</label>
                 </div>
-                <div className={styles.input_fields}>
-                  <input type="radio" id="consumer" name="userType" />
-                  <label htmlFor="consumer">Consumer</label>
-                </div>
+              </div>
+              <div className={styles.input_fields}>
+                <input type="radio" id="consumer" name="userType" />
+                <label htmlFor="consumer">Consumer</label>
               </div>
               <div className={styles.input_fields}>
                 <input
