@@ -14,7 +14,7 @@
 
 .loginwrap {
   text-align: center;
-  width: 500px;
+  width: 400px;
   margin-top: 70%;
   border: 1px solid black;
   border-radius: 8px;
@@ -24,19 +24,24 @@
 .loginheader {
   font-size: 32px;
   font-weight: bold;
+  padding: 20px 0px;
 }
 
 .formwrap {
   margin-top: 10px;
 }
+
 .radiobtn {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
 }
 
 label {
-  padding-left: 20px;
+  padding-left: 2px;
 }
 
 .input_fields {

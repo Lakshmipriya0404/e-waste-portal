@@ -10,8 +10,8 @@
   
   .logincontainer {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     height: 70%;
     margin: auto;
     width: 60%;
@@ -42,7 +42,7 @@
   
   .radiobtn {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -50,19 +50,19 @@
   }
 
   .radiobtn label{
-    margin-bottom: 20px;
-    margin-right: 50px;
+    /* margin-bottom: 20px; */
+    margin: 20px 10px;
   }
 
   .radiolabel{
     /* padding-top: 1%; */
-    font-size: 26px;
+    font-size: 22px;
     margin: 0;
     color: black;
   }
   
   .radiolabel_doorstep label{
-    width: 500px;
+    width: 300px;
   }
 
   .input_fields{
