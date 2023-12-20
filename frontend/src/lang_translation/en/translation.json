@@ -6,5 +6,10 @@
         "locator":"E-STATS",
         "login":"LOGIN",
         "signup":"SIGN UP"
+    },
+
+    "homepage":{
+        "subtitle":"The Green Future of E-Waste Disposal",
+        "contact us":"Contact Us"
     }
 }
