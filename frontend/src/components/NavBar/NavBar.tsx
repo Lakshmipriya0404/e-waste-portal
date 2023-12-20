@@ -21,8 +21,10 @@ const NavBar: React.FC = () => {
       <ProgressBar scrollPercent={scrollPercentage} />
       
       <div className={styles.nav}>
-      
-        {NavRoutes.slice(0, 7).map((route, index) => (
+        <div className={styles.image}>
+          <img className={styles.pageLogo} src={logo} />
+        </div>
+        {NavRoutes.slice(0, 8).map((route, index) => (
           <NavItem key={index} path={route.path} name={route.meta.name} />
         ))}
       </div>

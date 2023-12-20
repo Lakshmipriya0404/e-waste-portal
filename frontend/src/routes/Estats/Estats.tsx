@@ -142,7 +142,31 @@ const Estats: React.FC = () => {
     },
   });
 
-  const [barChartOptions, setBarChartOptions] = useState({});
+  const [barChartOptions, setBarChartOptions] = useState({
+    chart: {
+      type: "bar",
+    },
+    title: {
+      text: "Large Home Appliances",
+    },
+    xAxis: {
+      categories: [
+        "Referigerator",
+        "Washing Machine",
+        "Air Conditioner",
+        "Stove",
+        "Dish Washer",
+      ],
+    },
+    series: [
+      {
+        type: "bar",
+        name: "Bar Series",
+        data: [15, 7, 10, 3, 12],
+        color: "#45C8FF",
+      },
+    ],
+  });
 
   return (
     <div style={{ paddingTop: "70px", height: "100vh" }}>

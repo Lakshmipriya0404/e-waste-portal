@@ -1,53 +1,55 @@
 .sideboard {
-    background-color: #E1F5FE;
-    width: 17%;
-  }
-  
-  .profileimg{
-    margin-top: 100px;
-    margin-left: 110px;
-    width: 50px;
-    height: 50px;
-  }
+  background-color: #e1f5fe;
+  width: max-content;
+  position: fixed;
+  height: 100vh;
+  padding: 25px;
+}
 
-  .welcome {
-    margin-left: 12%;
-    margin-top: 7%;
-    font-size: 30px;
-  }
-  
-  .sidebtn {
-    margin-left: 15%;
-    margin-top: 15% ;
-    margin-bottom: 6% ;
-    width: 70%;
-    background-color: #10143e;
-    border: #191f68;
-    padding: 15px;
-  }
-  
-  .sidebarlist {
-    margin-top: 20px;
-  }
+.profileimg {
+  margin-top: 100px;
+  margin-left: 110px;
+  width: 50px;
+  height: 50px;
+}
 
-  .listgroup{
-    margin-left: 15%;
-  }
-  
-  .item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 20px;
-  }
-  
-  .item:hover {
-    background-color: #f0f0f0; /* Add your preferred hover background color */
-  }
-  
-  .text {
-    margin-left: 10px;
-  }
-  
+.welcome {
+  margin-left: 12%;
+  margin-top: 7%;
+  font-size: 30px;
+}
+
+.sidebtn {
+  margin-left: 15%;
+  margin-top: 15%;
+  margin-bottom: 6%;
+  width: 70%;
+  background-color: #10143e;
+  border: #191f68;
+  padding: 15px;
+}
+
+.sidebarlist {
+  margin-top: 20px;
+}
+
+.listgroup {
+  margin-left: 15%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 20px;
+}
+
+.item:hover {
+  background-color: #f0f0f0; /* Add your preferred hover background color */
+}
+
+.text {
+  margin-left: 10px;
+}

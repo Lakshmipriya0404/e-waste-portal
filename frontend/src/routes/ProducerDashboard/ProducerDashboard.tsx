@@ -5,6 +5,7 @@ import Profile from "../../sections/Profile/ProducerProfile";
 import FacilityLocator from "../../sections/Locator/FacilityLocator";
 import RecentRequest from "../../sections/RecentRequest/RecentRequest";
 import Disposal_History from "../../sections/Disposal_History/Disposal_History";
+import Home from "../Home/Home";
 // import RequestQueue from "../../sections/RequestQueue/RequestQueue";
 // import AboutFacilitator from "../../sections/AboutFacilitator/AboutFacilitator";
 

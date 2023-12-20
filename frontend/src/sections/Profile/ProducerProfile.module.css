@@ -21,6 +21,15 @@
   margin-top: 5%;
 }
 
+.creditcard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: #daeadd;
+  background-color: #daeadd;
+  border-radius: 17px;
+}
+
  /* .row {
   display: flex;
   margin-bottom: 10px;

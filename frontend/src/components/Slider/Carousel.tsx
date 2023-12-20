@@ -17,7 +17,7 @@ const Carousel: React.FC<CarouselProps> = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     speed: 1000,
     autoplaySpeed: 3000,
     cssEase: "linear",
