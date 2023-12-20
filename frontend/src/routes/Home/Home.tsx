@@ -12,7 +12,7 @@ import bharate from "../../assets/BharatE_logo.png";
 
 const Home = () => {
   const handleClick=()=>{
-    window.location.href='https://github.com/Lakshmipriya0404/e-waste-portal/tree/priya/frontend/src/components';
+    window.location.href='http://localhost:8501/';
   }
   const {t,i18n} =useTranslation();
 
