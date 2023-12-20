@@ -28,17 +28,25 @@ const FacilityLocator: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   const handleLiveLocation = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 10000);
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition, showError);
     } else {
       setError("Geolocation is not supported by this browser.");
     }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   };
 
   const showPosition = (position: GeolocationPosition) => {
     setError(null);
     setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 10000);
 
     GetLocations(
       position.coords.latitude.toString(),

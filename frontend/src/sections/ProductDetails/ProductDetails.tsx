@@ -4,7 +4,7 @@ import AddProductModal from "../../components/AddProductModal/AddProductModal";
 
 const ProductDetails = () => {
   const [isAddProductModalOpen, setAddProductModalOpen] = useState(false);
-  const [productData, setProductData] = useState(null);
+  const [productData, setProductData] = useState([]);
   const openAddProductModal = () => {
     setAddProductModalOpen(true);
   };
@@ -13,18 +13,40 @@ const ProductDetails = () => {
     setAddProductModalOpen(false);
   };
   const handleAddProduct = (formData) => {
-    // Handle the form data received from AddProductModal
     console.log("Form Data:", formData);
-
-    // Set the product data in the state or perform any other actions
-    setProductData(formData);
+    setProductData((prevData) => [...prevData, formData]);
+    console.log(productData);
+    closeAddProductModal();
   };
   return (
     <div className={styles.detailswrap}>
       <div className={styles.header}>
-        <a href="">back icon</a>
+        {/* <a href="">back icon</a> */}
         <h2>Product Details</h2>
-        <div className={styles.table}>TABLE</div>
+        <div className={styles.table}>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Device Type</th>
+                <th>Model</th>
+                <th>Quantity</th>
+                <th>Condition</th>
+              </tr>
+            </thead>
+            <tbody>
+              {productData.map((product, index) => (
+                <tr key={index}>
+                  <td>{product.category}</td>
+                  <td>{product.device_type}</td>
+                  <td>{product.model}</td>
+                  <td>{product.quantity}</td>
+                  <td>{product.condition}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
         <div className={styles.button}>
           <button onClick={openAddProductModal}>ADD PRODUCT</button>
           <button>SUBMIT REQUEST</button>
