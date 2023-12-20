@@ -11,14 +11,7 @@ from routes import producer, authentication, consumer
 # from locator import nearby_facility
 
 app = FastAPI()
-models.Base.metadata.create_all(bind=engine)
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# models.Base.metadata.create_all(bind=engine)
 
 app.include_router(producer.router)
 app.include_router(authentication.router)
@@ -28,12 +21,20 @@ app.include_router(consumer.router)
 async def root():
     return {"message": "Hello World"} 
 
+services.create_database()
+
 
 
 
 
 # Configure CORS to allow requests from your React app's domain
-
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["http://localhost:3000"],
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 # @app.get("/location")
 # async def process_location(

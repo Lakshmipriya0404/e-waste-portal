@@ -1,12 +1,12 @@
 import datetime as dt
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class CreateProducer(BaseModel):
     pname: str
     category: str
-    email: str
-    pass_hash: str
+    email: str = Field(default='pooja@gmail.com')
+    pass_hash: str = Field(default='pooja')
     phone: str
     address: str
     state: str
@@ -17,6 +17,7 @@ class CreateProducer(BaseModel):
 
 
 class ShowProducer(BaseModel):
+    pid: int
     pname: str
     category: str
     email: str
@@ -25,7 +26,6 @@ class ShowProducer(BaseModel):
     state: str
     pincode: str
     credits: int
-    date_created: dt.datetime
 
     class Config:
         orm_mode = True
@@ -75,6 +75,7 @@ class ShowConsumerBackend(BaseModel):
 
 
 class ShowConsumer(BaseModel):
+    cid: int
     cname: str
     email: str
     phone: str
@@ -92,6 +93,7 @@ class ShowConsumer(BaseModel):
 
 
 class ConsWithDist(BaseModel):
+    cid: int
     cname: str
     email: str
     phone: str
@@ -109,7 +111,6 @@ class ConsWithDist(BaseModel):
         orm_mode = True
 
 
-
 class Login(BaseModel):
     role: str
     username: str
@@ -123,3 +124,35 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
     username: str | None = None
+
+
+class AddProduct(BaseModel):
+    category: str
+    device_type: str
+    model: str
+    quantity: int
+    condition: str
+
+
+class ProdRequests(BaseModel):
+    tid: int
+    did: int
+    prod: ShowProducer
+    status: str
+    
+
+class ConsResponse(BaseModel):
+    tid: int
+    status: str
+    date_updated: dt.datetime
+
+
+class RecentRequests(BaseModel):
+    tid: int
+    did: int
+    cons: ShowConsumer
+    status: str
+
+
+class Credit(BaseModel):
+    credits: int
