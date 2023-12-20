@@ -7,6 +7,7 @@ import OrderHistory from "../../sections/OrderHistory/OrderHistory";
 import OrderDetails from "../../sections/OrderDetails/OrderDetails";
 import RequestDetails from "../../sections/RequestDetails/RequestDetails";
 import AddProductModal from "../../components/AddProductModal/AddProductModal";
+import ProductDetails from "../../sections/ProductDetails/ProductDetails";
 
 const ConsumerDashboard = () => {
   return (
